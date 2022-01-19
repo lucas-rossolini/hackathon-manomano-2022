@@ -7,9 +7,7 @@ function Home() {
     <>
       <Header />
 
-
-    <Results />
-
+      <Results />
 
       <Footer />
     </>
