@@ -1,17 +1,19 @@
 import React from "react";
-
 import { Header, Footer, Results } from "../components";
-
 import "./Home.scss";
 
-const Home = () => (
-  <>
-    <Header />
+function Home() {
+  return (
+    <>
+      <Header />
+
 
     <Results />
 
-    <Footer />
-  </>
-);
+
+      <Footer />
+    </>
+  );
+}
 
 export default Home;
