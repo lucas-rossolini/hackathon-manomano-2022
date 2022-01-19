@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Form() {
+  const [area, setArea] = useState("");
+  const [budget, setBudget] = useState("");
+
   return (
     <div>
       <h1>Tell us about your project</h1>
@@ -31,8 +34,9 @@ function Form() {
           className=""
           id="area"
           type="text"
-          value=""
+          value={area}
           placeholder="20 m²"
+          onChange={(event) => setArea(event.target.value)}
         />
       </label>
       <label htmlFor="area">
@@ -41,8 +45,9 @@ function Form() {
           className=""
           id="budget"
           type="text"
-          value=""
+          value={budget}
           placeholder="1500 €"
+          onChange={(event) => setBudget(event.target.value)}
         />
       </label>
       <label htmlFor="tools">
