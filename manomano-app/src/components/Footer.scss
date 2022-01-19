@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap%27');
+
+.footer {
+  color: #fafafa;
+  font-family: 'Open Sans', sans-serif;
+}
+.informations {
+  background-color: #515872 ;
+  padding-left: 1em;
+  h3 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    .lock{
+      margin-right: 0.3em;
+      font-size: 1.5em;
+    }
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .falseButton {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3em;
+    margin: 0.3em 0 0.1em 0;
+    overflow: hidden;
+  }
+  .icons-payment {
+    display: flex;
+    width: 5em;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3em;
+    margin: 0.3em 0 0.1em 0;
+    overflow: hidden;
+  }
+  .icons-media {
+    margin-top: 7px;
+    width: 5em;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    overflow: hidden;
+    height: 45px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+    img{
+      padding-right: 15px;
+    }
+  }
+  hr {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+    width: 95%;
+  }
+  .securePayment, .international {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .international {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    .icons {
+      .ToTopButton {
+        border: 1px solid #fafafa;
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+        bottom: 24px;
+        right: 24px;        
+        background-color: transparent;
+        color: #fafafa;
+        margin-left: 25%;
+        .ToTopButton_arrow {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 30px;
+          width: 30px;
+          -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+        }
+        .svg {
+          display: inline-block;
+          flex-shrink: 0;
+          user-select: none;
+          position: relative;
+          fill: currentColor;
+          width: auto;
+          height: auto;
+          font-size: 1.5rem;
+          transition: fill .2s cubic-bezier(.4,0,.2,1) 0ms;
+        }
+      }
+    }
+  }
+}
+
+.footerEnd {
+  font-size: 15px;
+  background-color: #0c193b;  
+  div{
+    text-align: center;
+    padding-top: 1em;
+  }
+  .mentions {
+    padding-bottom: 1em;
+  }
+}
