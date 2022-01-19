@@ -54,6 +54,14 @@ function Form() {
         <input type="checkbox" id="tools" name="tools" />I already have the
         tools
       </label>
+      <div className="">
+        <button className="buttonForm" type="submit">
+          Cancel
+        </button>
+        <button className="buttonForm" type="submit">
+          Validate
+        </button>
+      </div>
     </div>
   );
 }
