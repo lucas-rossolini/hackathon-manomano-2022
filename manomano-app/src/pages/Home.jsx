@@ -1,19 +1,11 @@
 import React from "react";
 
-import { Header, Footer } from "components";
+import { Header } from "../components";
 
 import "./Home.scss";
 
-const Home = () => (
-  <>
-    <Header />
-
-    <main className="home">
-      <h1>Home Here !</h1>
-    </main>
-
-    <Footer />
-  </>
-);
+function Home() {
+  return <Header />;
+}
 
 export default Home;
