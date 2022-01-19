@@ -29,6 +29,26 @@ const productsData = [
     priceDec: 57,
     freeDelivery: true,
     keywords: ["interior"],
+    toolsNeeded: [
+      {
+        name: "pressure reducer",
+        link: "https://www.manomano.co.uk/search/pressure+reducer",
+      },
+      {
+        name: "metal saw",
+        link: "https://www.manomano.co.uk/search/metal+saw",
+      },
+      {
+        name: "glue pvc",
+        link: "https://www.manomano.fr/recherche/colle+pvc",
+      },
+      {
+        name: "hole saw",
+        link: "https://www.manomano.co.uk/search/hole+saw",
+      },
+    ],
+    videoAdvice:
+      "https://www.manomano.fr/conseil/comment-installer-une-vasque-5979",
   },
   {
     // douche
@@ -43,6 +63,18 @@ const productsData = [
     priceDec: 97,
     freeDelivery: true,
     keywords: ["interior"],
+    toolsNeeded: [
+      { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
+      {
+        name: "screwdriver",
+        link: "https://www.manomano.co.uk/search/screwdriver",
+      },
+      { name: "level", link: "https://www.manomano.co.uk/search/level" },
+      { name: "hammer", link: "https://www.manomano.co.uk/search/hammer" },
+      { name: "screw", link: "https://www.manomano.co.uk/search/screw" },
+    ],
+    videoAdvice:
+      "https://www.youtube.com/watch?v=iS2osn9tdnQ&ab_channel=BRICOFAMILIE",
   },
   {
     // faillence
@@ -57,6 +89,25 @@ const productsData = [
     priceDec: 88,
     freeDelivery: true,
     keywords: ["interior"],
+    toolsNeeded: [
+      { name: "sander", link: "https://www.manomano.co.uk/search/sander" },
+      { name: "level", link: "https://www.manomano.co.uk/search/level" },
+      { name: "grinder", link: "https://www.manomano.co.uk/search/grinder" },
+      {
+        name: "sponge",
+        link: "https://www.manomano.co.uk/p/sponge-float-11in-x-41-2in-28657186",
+      },
+      {
+        name: "tile adhesive",
+        link: "https://www.manomano.co.uk/tile-adhesive-103",
+      },
+      {
+        name: "tile cut",
+        link: "https://www.manomano.co.uk/p/excel-180mm-electrical-wet-tile-cutter-600w-heavy-duty-23531413",
+      },
+    ],
+    videoAdvice:
+      "https://www.youtube.com/watch?v=ACIAdyJHxrA&ab_channel=EricLeCarreleur",
   },
   {
     // mirroir
@@ -71,6 +122,17 @@ const productsData = [
     priceDec: 99,
     freeDelivery: true,
     keywords: ["interior"],
+    toolsNeeded: [
+      { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
+      {
+        name: "screwdriver",
+        link: "https://www.manomano.co.uk/search/screwdriver",
+      },
+      { name: "level", link: "https://www.manomano.co.uk/search/level" },
+      { name: "hammer", link: "https://www.manomano.co.uk/search/hammer" },
+    ],
+    videoAdvice:
+      "https://www.youtube.com/watch?v=_G2gCBXy8ZA&ab_channel=BroadcastSunny",
   },
   {
     // carrelage
@@ -85,6 +147,52 @@ const productsData = [
     priceDec: 99,
     freeDelivery: true,
     keywords: ["interior"],
+    toolsNeeded: [
+      { name: "trowel", link: "https://www.manomano.co.uk/search/trowel" },
+      {
+        name: "mixer",
+        link: "https://www.manomano.co.uk/catalogue/p/power-mixer-1400w-110v-vitmix1400l-41309423",
+      },
+      {
+        name: "tile cut",
+        link: "https://www.manomano.co.uk/p/excel-180mm-electrical-wet-tile-cutter-600w-heavy-duty-23531413",
+      },
+      {
+        name: "sponge",
+        link: "https://www.manomano.co.uk/p/sponge-float-11in-x-41-2in-28657186",
+      },
+      {
+        name: "tile adhesive",
+        link: "https://www.manomano.co.uk/tile-adhesive-103",
+      },
+    ],
+    videoAdvice: "https://www.youtube.com/watch?v=VAxzOmEzqpM",
+  },
+
+  {
+    // meuble pharmacie
+    name: "SoBuy White Kitchen Bathroom Wall Unit with Double Doors FRG231-W",
+    link: "https://www.manomano.co.uk/p/sobuy-white-kitchen-bathroom-wall-unit-with-double-doors-frg231-w-5328558",
+    img: "https://cdn.manomano.com/sobuy-white-kitchen-bathroom-wall-unit-with-double-doors-frg231-w-P-2640618-8384476_1.jpg",
+    brandName: "SoBuy",
+    logo: "https://cdn.manomano.com/brand-sobuy-237971.jpg",
+    rate: 4,
+    rateNumber: 45,
+    priceInt: 49,
+    priceDec: 95,
+    freeDelivery: true,
+    keywords: ["interior"],
+    toolsNeeded: [
+      { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
+      {
+        name: "screwdriver",
+        link: "https://www.manomano.co.uk/search/screwdriver",
+      },
+      { name: "level", link: "https://www.manomano.co.uk/search/level" },
+      { name: "hammer", link: "https://www.manomano.co.uk/search/hammer" },
+    ],
+    videoAdvice:
+      "https://www.youtube.com/watch?v=_G2gCBXy8ZA&ab_channel=BroadcastSunny",
   },
 
   // Fin Vianney --------------------------------
