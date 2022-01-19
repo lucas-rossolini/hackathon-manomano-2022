@@ -1,7 +1,5 @@
 import React from "react";
-
-import { Header, Footer } from "../components";
-
+import { Header, Footer, Results } from "../components";
 import "./Home.scss";
 
 function Home() {
@@ -9,7 +7,9 @@ function Home() {
     <>
       <Header />
 
-      <main className="home" />
+
+    <Results />
+
 
       <Footer />
     </>

@@ -1,17 +1,12 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import { Home, Page404 } from "./pages";
-
 import "./App.scss";
-import Form from "./components/Form";
+// import Form from "./components/Form";
 
 function App() {
   return (
     <div>
-      <div>
-        <Form />
-      </div>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="*" element={<Page404 />} />
