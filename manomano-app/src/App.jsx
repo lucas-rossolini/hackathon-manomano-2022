@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
-import { Home, Page404 } from "pages";
+import { Home, Page404 } from "./pages";
 
 import "./App.scss";
 
