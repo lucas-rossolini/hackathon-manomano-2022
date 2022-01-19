@@ -5,7 +5,7 @@ import "./Results.scss";
 const datas = [
   {
     name: "Élagueuse thermique sur perche, 52 cm3, 3 CV, longueur 4.15 mètres",
-    link: "",
+    link: "https://www.manomano.fr/p/elagueuse-thermique-sur-perche-52-cm3-3-cv-longueur-415-metres-41203647",
     img: "https://cdn.manomano.com/elagueuse-thermique-sur-perche-52-cm3-3-cv-longueur-415-metres-P-4935052-40633584_1.jpg",
     brandName: "GT Garden",
     logo: "https://cdn.manomano.com/marque-gt-garden-3921.png",
@@ -14,6 +14,7 @@ const datas = [
     priceInt: 164,
     priceDec: 80,
     freeDelivery: true,
+    keywords: [],
   },
   {
     name: "Élagueuse thermique sur perche, 52 cm3, 3 CV, longueur 4.15 mètres",
@@ -26,6 +27,7 @@ const datas = [
     priceInt: 164,
     priceDec: 80,
     freeDelivery: false,
+    keywords: [],
   },
   {
     name: "Élagueuse thermique sur perche, 52 cm3, 3 CV, longueur 4.15 mètres",
@@ -38,6 +40,7 @@ const datas = [
     priceInt: 164,
     priceDec: 80,
     freeDelivery: true,
+    keywords: [],
   },
 ];
 
