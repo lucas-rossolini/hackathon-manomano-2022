@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap%27");
+
+.form {
+  color: #0c193a;
+  font-family: Open sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 27px;
+  background-color: #f5f6f7;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.titleForm {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 24px;
+  margin-top: 14px;
+}
+
+.label {
+  font-weight: 600;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.input {
+  margin-bottom: 12px;
+  margin-top: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: 2px;
+  border-radius: 20px;
+  height: 45px;
+  box-shadow: 0 2px 4px #0c193a;
+}
+
+.buttonForm {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: #12367a;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 2px 4px #0c193a;
+}
+
+.tools {
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.checkbox {
+  margin-left: 5px;
+}
+
+.select {
+  margin-top: 4px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  height: 40px;
+  box-shadow: 0 2px 4px #0c193a;
+  // -webkit-appearance: none;
+  // -moz-appearance: none;
+  // appearance: none;
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.option {
+  margin-right: 20px;
+  color: red;
+}

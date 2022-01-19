@@ -9,9 +9,7 @@ function Home() {
     <>
       <Header />
 
-      <main className="home">
-        <h1>Home Here !</h1>
-      </main>
+      <main className="home" />
 
       <Footer />
     </>
