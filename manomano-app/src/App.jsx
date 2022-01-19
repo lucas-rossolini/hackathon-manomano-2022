@@ -4,11 +4,13 @@ import { Home, Page404 } from "./pages";
 
 import "./App.scss";
 
-const App = () => (
-  <Routes>
-    <Route exact path="/" element={<Home />} />
-    <Route exact path="*" element={<Page404 />} />
-  </Routes>
-);
+function App() {
+  return (
+    <Routes>
+      <Route exact path="/" element={<Home />} />
+      <Route exact path="*" element={<Page404 />} />
+    </Routes>
+  );
+}
 
 export default App;
