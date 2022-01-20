@@ -108,6 +108,7 @@ function Form({
               handleBudget("");
               handleLocation("");
               handleRoom("");
+              handleWork("");
             }}
             className="buttonForm"
             type="submit"
