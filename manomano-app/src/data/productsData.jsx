@@ -12,7 +12,7 @@ const productsData = [
     priceInt: 164,
     priceDec: 80,
     freeDelivery: true,
-    keywords: ["Outside"],
+    keywords: ["outside"],
   },
   // Fin Lucas ----------------------------------
 
@@ -30,7 +30,7 @@ const productsData = [
     priceInt: 39,
     priceDec: 57,
     freeDelivery: true,
-    keywords: ["interior", "bathroom", "plumber"],
+    keywords: ["inside", "bathroom", "plumber"],
     toolsNeeded: [
       {
         name: "pressure reducer",
@@ -65,7 +65,7 @@ const productsData = [
     priceInt: 69,
     priceDec: 97,
     freeDelivery: true,
-    keywords: ["interior", "bathroom", "plumber", "shower"],
+    keywords: ["inside", "bathroom", "plumber", "shower"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -92,7 +92,7 @@ const productsData = [
     priceInt: 14,
     priceDec: 88,
     freeDelivery: true,
-    keywords: ["interior", "floor", "wall", "decoration", "bathroom"],
+    keywords: ["inside", "floor", "wall", "decoration", "bathroom"],
     toolsNeeded: [
       { name: "sander", link: "https://www.manomano.co.uk/search/sander" },
       { name: "level", link: "https://www.manomano.co.uk/search/level" },
@@ -126,7 +126,7 @@ const productsData = [
     priceInt: 91,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior", "bathroom", "bedroom", "decoration", "wall"],
+    keywords: ["inside", "bathroom", "bedroom", "decoration", "wall"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -152,7 +152,7 @@ const productsData = [
     priceInt: 15,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior", "floor", "bathroom"],
+    keywords: ["inside", "floor", "bathroom"],
     toolsNeeded: [
       { name: "trowel", link: "https://www.manomano.co.uk/search/trowel" },
       {
@@ -187,7 +187,7 @@ const productsData = [
     priceInt: 49,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior", "bathroom", "security", "ordering"],
+    keywords: ["inside", "bathroom", "security", "ordering"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -381,7 +381,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior", "bedroom", "wardrobe"],
+    keywords: ["inside", "bedroom", "wardrobe"],
     toolsNeeded: [
       {
         name: "screwdriver",
@@ -402,7 +402,7 @@ const productsData = [
     priceInt: 169,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior", "bedroom", "bed"],
+    keywords: ["inside", "bedroom", "bed"],
     toolsNeeded: "already provided",
     VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
   },
@@ -419,7 +419,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 49,
     freeDelivery: true,
-    keywords: ["Inside"],
+    keywords: ["inside"],
     toolsNeeded: [
       {
         name: "Tool with Felt Squeegee",
@@ -441,7 +441,7 @@ const productsData = [
     priceInt: 27,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["Inside"],
+    keywords: ["inside"],
     toolsNeeded: [
       {
         // perceuse
