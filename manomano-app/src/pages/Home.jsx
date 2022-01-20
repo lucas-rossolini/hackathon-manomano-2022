@@ -1,12 +1,14 @@
 import React from "react";
-import { Header, Footer, Results } from "../components";
+import { Header, Footer, Results, HomeComponent } from "../components";
 import "./Home.scss";
 
 function Home({ keyWords }) {
+  const formFilled = false;
   return (
     <>
       <Header />
-      <Results keyWords={keyWords} />
+
+      {formFilled ? <Results keyWords={keyWords} /> : <HomeComponent />}
 
       <Footer />
     </>

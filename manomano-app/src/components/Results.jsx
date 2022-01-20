@@ -59,11 +59,6 @@ function Results({ keyWords }) {
     }
   }
 
-  // const testResults = _.intersection(productsData[1].keywords, formResults);
-  console.log(productsData[0].keywords);
-  console.log(myResults);
-  // setMyProductsArray(myResults);
-
   return (
     <section className="listingProducts">
       <div className="listingHeader">
