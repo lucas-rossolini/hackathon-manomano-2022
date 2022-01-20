@@ -12,6 +12,8 @@ function App() {
   const [room, setRoom] = useState("");
   const [work, setWork] = useState("");
   const [keyWords, setKeyWords] = useState([]);
+  const [formFilled, setFormFilled] = useState(false);
+
   useEffect(() => {
     const formResults = [];
     formResults.push(area, budget, location, room, work);
@@ -44,7 +46,11 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<Home keyWords={keyWords} />} />
+        <Route
+          exact
+          path="/"
+          element={<Home keyWords={keyWords} formFilled={formFilled} />}
+        />
         <Route exact path="*" element={<Page404 />} />
         <Route
           exact
@@ -63,6 +69,8 @@ function App() {
               handleLocation={handleLocation}
               handleWork={handleWork}
               work={work}
+              formFilled={formFilled}
+              setFormFilled={setFormFilled}
             />
           }
         />

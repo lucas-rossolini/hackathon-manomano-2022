@@ -17,6 +17,7 @@ function Form({
   handleLocation,
   work,
   handleWork,
+  setFormFilled,
 }) {
   return (
     <div className="form">
@@ -109,6 +110,7 @@ function Form({
               handleLocation("");
               handleRoom("");
               handleWork("");
+              setFormFilled(false);
             }}
             className="buttonForm"
             type="submit"
@@ -117,7 +119,11 @@ function Form({
           </button>
         </Link>
         <Link to="/">
-          <button className="buttonForm" type="submit">
+          <button
+            className="buttonForm"
+            type="submit"
+            onSubmit={setFormFilled(true)}
+          >
             Validate
           </button>
         </Link>
