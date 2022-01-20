@@ -2,12 +2,12 @@ import React from "react";
 import { Header, Footer, Results } from "../components";
 import "./Home.scss";
 
-function Home() {
+function Home({ area, checkBoxTools, budget }) {
   return (
     <>
       <Header />
 
-      <Results />
+      <Results area={area} checkBoxTools={checkBoxTools} budget={budget} />
 
       <Footer />
     </>

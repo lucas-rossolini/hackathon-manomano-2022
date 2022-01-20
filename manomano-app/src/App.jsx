@@ -7,26 +7,42 @@ import Form from "./components/Form";
 function App() {
   const [area, setArea] = useState("");
   const [budget, setBudget] = useState("");
-  const [checkBoxTools, setCheckBoxTools] = useState("false");
+  const [checkBoxTools, setCheckBoxTools] = useState(true);
 
   const handleCheckBoxTools = () => {
     setCheckBoxTools(!checkBoxTools);
+    console.log(checkBoxTools);
+  };
+
+  const handleArea = (value) => {
+    setArea(value);
+  };
+
+  const handleBudget = (value) => {
+    setBudget(value);
   };
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route
+          exact
+          path="/"
+          element={
+            <Home area={area} checkBoxTools={checkBoxTools} budget={budget} />
+          }
+        />
         <Route exact path="*" element={<Page404 />} />
         <Route
           exact
           path="/projet"
           element={
             <Form
+              handleArea={handleArea}
               area={area}
-              setArea={setArea}
               budget={budget}
-              setBudget={setBudget}
+              handleBudget={handleBudget}
               handleCheckBoxTools={handleCheckBoxTools}
+              checkBoxTools={checkBoxTools}
             />
           }
         />

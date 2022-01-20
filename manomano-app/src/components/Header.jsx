@@ -69,7 +69,7 @@ function Header() {
       </div>
       <ul className="list-sells">
         {sells.map((sell) => (
-          <li>{sell.name}</li>
+          <li key={sell.name}>{sell.name}</li>
         ))}
       </ul>
     </header>

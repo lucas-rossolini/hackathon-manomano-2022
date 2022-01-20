@@ -4,7 +4,14 @@ import { Link } from "react-router-dom";
 import "./Form.scss";
 // import { FaChevronDown } from "react-icons/fa";
 
-function Form({ area, setArea, budget, setBudget, handleCheckBoxTools }) {
+function Form({
+  handleArea,
+  area,
+  budget,
+  handleBudget,
+  handleCheckBoxTools,
+  checkBoxTools,
+}) {
   return (
     <div className="form">
       <h1 className="titleForm">Tell us about your project</h1>
@@ -45,7 +52,7 @@ function Form({ area, setArea, budget, setBudget, handleCheckBoxTools }) {
           type="text"
           value={area}
           placeholder="20 m²"
-          onChange={(event) => setArea(event.target.value)}
+          onChange={(event) => handleArea(event.target.value)}
         />
         <label className="label" htmlFor="budget">
           budget
@@ -56,13 +63,14 @@ function Form({ area, setArea, budget, setBudget, handleCheckBoxTools }) {
           type="text"
           value={budget}
           placeholder="1500 €"
-          onChange={(event) => setBudget(event.target.value)}
+          onChange={(event) => handleBudget(event.target.value)}
         />
         <label className="label" htmlFor="tools">
           <input
             type="checkbox"
             className="tools"
             name="tools"
+            value={checkBoxTools}
             onClick={() => handleCheckBoxTools()}
           />{" "}
           I already have the tools
@@ -70,13 +78,22 @@ function Form({ area, setArea, budget, setBudget, handleCheckBoxTools }) {
       </form>
       <div className="button">
         <Link to="/">
-          <button className="buttonForm" type="submit">
+          <button
+            onClick={() => {
+              handleArea("");
+              handleBudget("");
+            }}
+            className="buttonForm"
+            type="submit"
+          >
             Cancel
           </button>
         </Link>
-        <button className="buttonForm" type="submit">
-          Validate
-        </button>
+        <Link to="/">
+          <button className="buttonForm" type="submit">
+            Validate
+          </button>
+        </Link>
       </div>
     </div>
   );

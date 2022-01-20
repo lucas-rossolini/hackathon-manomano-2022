@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./Results.scss";
 
 const datas = [
@@ -44,7 +43,11 @@ const datas = [
   },
 ];
 
-function Results() {
+function Results({ area, checkBoxTools, budget }) {
+  console.log(area);
+  console.log(checkBoxTools);
+  console.log(budget);
+
   return (
     <div className="products-layout listing-products">
       {datas.map((data) => (
