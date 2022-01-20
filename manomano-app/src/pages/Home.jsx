@@ -1,13 +1,13 @@
 import React from "react";
-import { Header, Footer, Results } from "../components";
+import { Header, Footer, Results, HomeComponent } from "../components";
 import "./Home.scss";
 
-function Home() {
+function Home({ keyWords, formFilled }) {
   return (
     <>
       <Header />
 
-      <Results />
+      {formFilled ? <Results keyWords={keyWords} /> : <HomeComponent />}
 
       <Footer />
     </>

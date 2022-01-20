@@ -14,8 +14,9 @@
   "plugins": ["react", "prettier"],
   "rules": {
     "prettier/prettier": ["error"],
-    "react/prop-types": "warn",
+    "react/prop-types": 0,
     "no-console": "warn"
+    
   },
   "settings": {
     "import/resolver": {

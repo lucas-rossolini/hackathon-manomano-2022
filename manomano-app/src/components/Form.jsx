@@ -1,77 +1,169 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Form.scss";
-// import { FaChevronDown } from "react-icons/fa";
 
-function Form() {
-  const [area, setArea] = useState("");
-  const [budget, setBudget] = useState("");
-
+function Form({
+  handleArea,
+  area,
+  budget,
+  handleBudget,
+  handleCheckBoxTools,
+  checkBoxTools,
+  room,
+  handleRoom,
+  location,
+  handleLocation,
+  work,
+  handleWork,
+  setFormFilled,
+  garden,
+  handleGarden,
+}) {
   return (
     <div className="form">
       <h1 className="titleForm">Tell us about your project</h1>
       <form className="Form">
         <label className="label" htmlFor="form">
           Location
+          <select
+            onChange={(e) => handleLocation(e.target.value)}
+            value={location}
+            name="location"
+            className="select"
+          >
+            <option value="">--choice--</option>
+            <option value="inside">indoors</option>
+            <option value="outside">outdoors</option>
+          </select>
         </label>
-        <select name="location" className="select">
-          <option value="location1">interior</option>
-          <option value="location2">outside</option>
-        </select>
-        <label className="label" htmlFor="room">
-          Room
-        </label>
-        <select name="room" className="select">
-          <option value="room1">bathroom</option>
-          <option value="room2">bedroom</option>
-          <option value="room2">kitchen</option>
-          <option value="room2">dining room</option>
-        </select>
-        <label className="label" htmlFor="work">
-          Type of work
-        </label>
-        <select name="work" className="select">
-          <option className="option" value="work">
-            drill
-          </option>
-          <option value="work">sander</option>
-          <option value="work">key</option>
-          <option value="work">multi-tool</option>
-        </select>
+        {location === "outside" ? (
+          <label className="label" htmlFor="room">
+            Garden
+            <select
+              onChange={(e) => handleGarden(e.target.value)}
+              value={garden}
+              name="garden"
+              className="select"
+            >
+              <option value="">--choice--</option>
+              <option value="sheds">sheds</option>
+              <option value="pools">pools</option>
+              <option value="garden">vegetable garden</option>
+              <option value="decking">decking</option>
+            </select>
+          </label>
+        ) : (
+          <label className="label" htmlFor="room">
+            Room
+            <select
+              onChange={(e) => handleRoom(e.target.value)}
+              value={room}
+              name="room"
+              className="select"
+            >
+              <option value="">--choice--</option>
+              <option value="bathroom">bathroom</option>
+              <option value="bedroom">bedroom</option>
+              <option value="kitchen">kitchen</option>
+              <option value="dining room">dining room</option>
+            </select>
+          </label>
+        )}
+        {location === "outside" ? (
+          <label className="label" htmlFor="work">
+            Type of work
+            <select
+              onChange={(e) => handleWork(e.target.value)}
+              value={work}
+              name="work"
+              className="select"
+            >
+              <option value="">--choice--</option>
+              <option className="option" value="wood-work">
+                wood work
+              </option>
+              <option value="pruning">pruning</option>
+              <option value="gardening">garden maintenance</option>
+              <option value="building">building</option>
+            </select>
+          </label>
+        ) : (
+          <label className="label" htmlFor="work">
+            Type of work
+            <select
+              onChange={(e) => handleWork(e.target.value)}
+              value={work}
+              name="work"
+              className="select"
+            >
+              <option value="">--choice--</option>
+              <option className="option" value="plumbing">
+                plumbing
+              </option>
+              <option value="peint">peint</option>
+              <option value="renovation">renovation</option>
+              <option value="electricity">electricity</option>
+            </select>
+          </label>
+        )}
         <label className="label" htmlFor="area">
           Area
+          <input
+            className="input"
+            id="area"
+            type="text"
+            value={area}
+            placeholder="20 m²"
+            onChange={(event) => handleArea(event.target.value)}
+          />
         </label>
-        <input
-          className="input"
-          id="area"
-          type="text"
-          value={area}
-          placeholder="20 m²"
-          onChange={(event) => setArea(event.target.value)}
-        />
         <label className="label" htmlFor="budget">
           budget
+          <input
+            className="input"
+            id="budget"
+            type="text"
+            value={budget}
+            placeholder="1500 €"
+            onChange={(event) => handleBudget(event.target.value)}
+          />
         </label>
-        <input
-          className="input"
-          id="budget"
-          type="text"
-          value={budget}
-          placeholder="1500 €"
-          onChange={(event) => setBudget(event.target.value)}
-        />
-        <label className="label" htmlFor="tools">
-          <input type="checkbox" className="tools" name="tools" /> I already
-          have the tools
+        <label className="labelcheckbox" htmlFor="tools">
+          <input
+            type="checkbox"
+            className="tools"
+            name="tools"
+            value={checkBoxTools}
+            onClick={() => handleCheckBoxTools()}
+          />{" "}
+          I already have the tools
         </label>
       </form>
       <div className="button">
-        <button className="buttonForm" type="submit">
-          Cancel
-        </button>
-        <button className="buttonForm" type="submit">
-          Validate
-        </button>
+        <Link to="/">
+          <button
+            onClick={() => {
+              handleLocation("");
+              handleRoom("");
+              handleGarden("");
+              handleWork("");
+              setFormFilled(false);
+            }}
+            className="buttonForm"
+            type="submit"
+          >
+            Cancel
+          </button>
+        </Link>
+        <Link to="/">
+          <button
+            className="buttonForm"
+            type="submit"
+            onSubmit={setFormFilled(true)}
+          >
+            Validate
+          </button>
+        </Link>
       </div>
     </div>
   );

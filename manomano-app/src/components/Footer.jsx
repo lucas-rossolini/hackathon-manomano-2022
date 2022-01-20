@@ -165,7 +165,7 @@ function Footer() {
       </div>
 
       <div className="footerEnd">
-        <div>@2020 ManoMano</div>
+        <div>@2022 ManoMano</div>
         <div className="mentions">
           Manage cookies | Sitemap | Legal Notice | Data Protection Policy |
           Terms and conditions | consumer information

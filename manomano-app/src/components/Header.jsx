@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,7 +13,11 @@ function Header() {
   return (
     <header className="header">
       <div className="header-first-level">
-        <div className="logo-manomano">
+        <div
+          role="presentation"
+          onClick={() => window.location.reload()}
+          className="logo-manomano"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="147"
@@ -47,9 +52,11 @@ function Header() {
         </div>
         <div className="container-identifiant-panier">
           <p className="sign-up">sign up</p>
-          <i>
-            <FontAwesomeIcon icon={faShoppingCart} />
-          </i>
+          <Link to="basket">
+            <i>
+              <FontAwesomeIcon icon={faShoppingCart} />
+            </i>
+          </Link>
         </div>
       </div>
       <div className="header-second-level">
@@ -62,11 +69,13 @@ function Header() {
             <FontAwesomeIcon icon={faSearch} />
           </i>
         </div>
-        <button type="button">I have a project</button>
+        <Link to="projet">
+          <button type="button">I have a project</button>
+        </Link>
       </div>
       <ul className="list-sells">
         {sells.map((sell) => (
-          <li>{sell.name}</li>
+          <li key={sell.name}>{sell.name}</li>
         ))}
       </ul>
     </header>
