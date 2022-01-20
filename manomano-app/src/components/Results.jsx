@@ -153,7 +153,7 @@ function Results({ keyWords }) {
           Cancel
         </button>
 
-        <Link to="/">
+        <Link to="basket">
           <button className="buttonForm" type="button">
             Validate
           </button>
