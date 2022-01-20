@@ -6,7 +6,6 @@ function Home({ area, checkBoxTools, budget, room, location, work }) {
   return (
     <>
       <Header />
-
       <Results
         area={area}
         checkBoxTools={checkBoxTools}
@@ -15,7 +14,7 @@ function Home({ area, checkBoxTools, budget, room, location, work }) {
         location={location}
         work={work}
       />
-
+      <Results />
       <Footer />
     </>
   );
