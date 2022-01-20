@@ -236,8 +236,12 @@ const productsData = [
     priceDec: 95,
     freeDelivery: true,
     keywords: ["interior"],
-    toolsNeeded: "already provided",
-    VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
+    toolsNeeded: [
+      {
+        name: "already provided",
+        VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
+      },
+    ],
   },
   {
     // tapisserie, vinyl
@@ -285,6 +289,26 @@ const productsData = [
       },
     ],
     VideoAdvice: "https://www.youtube.com/watch?v=wki3wMAbtLg",
+  },
+  {
+    // commode
+    name: "Riano 5 Drawer Chest of Drawers Bedroom Storage Furniture, White",
+    link: "https://www.manomano.co.uk/p/riano-5-drawer-chest-white-17449627",
+    img: "https://cdn.manomano.com/images/images_products/9885246/L/17767227_1.jpg",
+    brandName: "Riano",
+    logo: "",
+    rate: 4,
+    rateNumber: 51,
+    priceInt: 64,
+    priceDec: 95,
+    freeDelivery: true,
+    keywords: ["interior"],
+    toolsNeeded: [
+      {
+        name: "screwdriver",
+        link: "https://www.manomano.co.uk/search/screwdriver",
+      },
+    ],
   },
   // Fin Maxime ---------------------------------
 ];
