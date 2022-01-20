@@ -101,6 +101,33 @@
   margin-top: 2px;
 }
 
+section {
+  .checkLabel {
+    margin-top: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    .checkTools {
+      margin-left: 20px;
+      margin-right: 10px;
+      margin-top: 4px;
+    }
+  }
+  .buttonForm {
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #12367a;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 2px 4px #0c193a;
+
+  }
+}
+
 .ratingsContainer {
   height: 16px;
   margin-top: 8px;
@@ -288,5 +315,5 @@ sup {
 }
 
 .listingProducts {
-  margin-bottom: 200px;
+  margin-bottom: 60px;
 }

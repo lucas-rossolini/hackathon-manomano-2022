@@ -5,7 +5,6 @@ import "./App.scss";
 import Form from "./components/Form";
 
 function App() {
-  const [checkBoxTools, setCheckBoxTools] = useState(true);
   const [location, setLocation] = useState("");
   const [room, setRoom] = useState("");
   const [work, setWork] = useState("");
@@ -16,10 +15,6 @@ function App() {
     formResults.push(location, room, garden, work);
     setKeyWords(formResults);
   }, [location, room, garden, work]);
-
-  const handleCheckBoxTools = () => {
-    setCheckBoxTools(!checkBoxTools);
-  };
 
   const handleLocation = (value) => {
     setLocation(value);
@@ -46,8 +41,6 @@ function App() {
           path="/projet"
           element={
             <Form
-              handleCheckBoxTools={handleCheckBoxTools}
-              checkBoxTools={checkBoxTools}
               room={room}
               handleRoom={handleRoom}
               location={location}

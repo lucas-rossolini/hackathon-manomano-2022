@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Results.scss";
 
@@ -49,6 +50,10 @@ import productsData from "../data/productsData";
 function Results({ keyWords }) {
   // const [myProductsArray, setMyProductsArray] = useState([]);
   // const formResults = ["bathroom", "bed"];
+  const [checkBoxTools, setCheckBoxTools] = useState(false);
+  const handleCheckBoxTools = () => {
+    setCheckBoxTools(!checkBoxTools);
+  };
   const myResults = [];
 
   for (let i = 0; i < keyWords.length; i += 1) {
@@ -63,7 +68,6 @@ function Results({ keyWords }) {
   console.log(productsData[0].keywords);
   console.log(myResults);
   // setMyProductsArray(myResults);
-
   return (
     <section className="listingProducts">
       <div className="listingHeader">
@@ -148,9 +152,41 @@ function Results({ keyWords }) {
                   ""
                 )}
               </span>
+              {console.log(data.toolsNeeded)}
+              {checkBoxTools === true ? (
+                ""
+              ) : (
+                <ul className="tools">
+                  {data.toolsNeeded.map((tools) => (
+                    <li key={tools.name}>{tools.name}</li>
+                  ))}
+                </ul>
+              )}
             </div>
           </a>
         ))}
+      </div>
+      <label className="checkLabel" htmlFor="tools">
+        <input
+          type="checkbox"
+          className="checkTools"
+          name="tools"
+          value={checkBoxTools}
+          onClick={() => handleCheckBoxTools()}
+        />{" "}
+        I already have the tools
+      </label>
+      <div className="button">
+        <Link to="/">
+          <button className="buttonForm" type="submit">
+            Cancel
+          </button>
+        </Link>
+        <Link to="/">
+          <button className="buttonForm" type="submit">
+            Validate
+          </button>
+        </Link>
       </div>
     </section>
   );
