@@ -335,6 +335,15 @@ sup {
   width: 100%;
 }
 
+.toolList::-webkit-scrollbar {
+  display: none;
+}
+
+.toolList {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
 .toolsLink {
   margin-left: 4px;
 }

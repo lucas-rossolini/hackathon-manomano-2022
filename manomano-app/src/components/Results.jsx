@@ -6,7 +6,6 @@ import "./Results.scss";
 import productsData from "../data/productsData";
 
 function Results({ keyWords }) {
-  console.log(keyWords);
   const [checkBoxTools, setCheckBoxTools] = useState(false);
   const handleCheckBoxTools = () => {
     setCheckBoxTools(!checkBoxTools);
@@ -143,6 +142,7 @@ function Results({ keyWords }) {
                     tools needed:{" "}
                     {data.toolsNeeded.map((tools, i, row) => (
                       <a
+                        key={tools.name}
                         className="toolsLink"
                         rel="noreferrer"
                         href={tools.link}
@@ -320,6 +320,7 @@ function Results({ keyWords }) {
                     tools needed:{" "}
                     {data.toolsNeeded.map((tools, i, row) => (
                       <a
+                        key={tools.name}
                         className="toolsLink"
                         rel="noreferrer"
                         href={tools.link}
@@ -497,6 +498,7 @@ function Results({ keyWords }) {
                     tools needed:{" "}
                     {data.toolsNeeded.map((tools, i, row) => (
                       <a
+                        key={tools.name}
                         className="toolsLink"
                         rel="noreferrer"
                         href={tools.link}
