@@ -41,8 +41,9 @@
   outline: 2px;
   border-radius: 20px;
   height: 45px;
-  box-shadow: 0 2px 4px #0c193a;
-  border: none;
+  // box-shadow: 0 2px 4px #0c193a;
+  border: solid 1px #E0E3E5;
+  background-color: #ffffff;
 }
 
 .buttonForm {
@@ -72,9 +73,11 @@
   margin-top: 4px;
   margin-bottom: 16px;
   border-radius: 20px;
-  height: 40px;
-  box-shadow: 0 2px 4px #0c193a;
-  border: none;
+  height: 45px;
+  // box-shadow: 0 2px 4px #0c193a;
+  border: solid 1px #E0E3E5;
+  background-color: #ffffff;
+  padding: 0 10px;
   // -webkit-appearance: none;
   // -moz-appearance: none;
   // appearance: none;
