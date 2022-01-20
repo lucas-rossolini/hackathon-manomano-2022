@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import "./Form.scss";
 
 function Form({
-  handleCheckBoxTools,
-  checkBoxTools,
   room,
   handleRoom,
   location,
   handleLocation,
   work,
   handleWork,
+  setFormFilled,
   garden,
   handleGarden,
 }) {
@@ -27,8 +26,8 @@ function Form({
             className="select"
           >
             <option value="">--choice--</option>
-            <option value="inside">inside</option>
-            <option value="outside">outside</option>
+            <option value="inside">indoors</option>
+            <option value="outside">outdoors</option>
           </select>
         </label>
         {location === "outside" ? (
@@ -101,17 +100,6 @@ function Form({
             </select>
           </label>
         )}
-
-        <label className="label" htmlFor="tools">
-          <input
-            type="checkbox"
-            className="tools"
-            name="tools"
-            value={checkBoxTools}
-            onClick={() => handleCheckBoxTools()}
-          />{" "}
-          I already have the tools
-        </label>
       </form>
       <div className="button">
         <Link to="/">
@@ -121,6 +109,7 @@ function Form({
               handleRoom("");
               handleGarden("");
               handleWork("");
+              setFormFilled(false);
             }}
             className="buttonForm"
             type="submit"
@@ -129,7 +118,11 @@ function Form({
           </button>
         </Link>
         <Link to="/">
-          <button className="buttonForm" type="submit">
+          <button
+            className="buttonForm"
+            type="submit"
+            onSubmit={setFormFilled(true)}
+          >
             Validate
           </button>
         </Link>

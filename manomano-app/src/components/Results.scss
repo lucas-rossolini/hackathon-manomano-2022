@@ -25,10 +25,11 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 16px;
   min-width: 320px;
   max-width: 341px;
-  max-height: 245px;
+  // max-height: 245px;
   border: 1px solid #ecedf0;
   border-radius: 4px;
   box-shadow: 0 2px 6px 0 rgb(0 0 0 / 8%);
@@ -43,8 +44,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex: initial;
 }
 
@@ -55,11 +56,12 @@
 }
 
 .product-logos {
-  position: absolute;
+  position: relative;
   display: flex;
   align-items: center;
   height: 16px;
-  bottom: 0;
+  margin-top: 4px;
+  // bottom: 0;
   left: 0;
 }
 
@@ -78,6 +80,7 @@
   flex-direction: column;
   margin-left: 8px;
   overflow: hidden;
+  min-width: 120px;
 }
 
 .product-title {
@@ -99,6 +102,33 @@
 .informationLine {
   height: 16px;
   margin-top: 2px;
+}
+
+section {
+  .checkLabel {
+    margin-top: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    .checkTools {
+      margin-left: 20px;
+      margin-right: 10px;
+      margin-top: 4px;
+    }
+  }
+  .buttonForm {
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #12367a;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 2px 4px #0c193a;
+
+  }
 }
 
 .ratingsContainer {
@@ -288,5 +318,20 @@ sup {
 }
 
 .listingProducts {
-  margin-bottom: 200px;
+  margin-bottom: 60px;
+}
+
+.toolList {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  font-weight: 600;
+  line-height: 16px;
+  font-size: 12px;
+  color: #0c193a;
+  overflow: scroll-y;
+}
+
+.toolsLink {
+  
 }

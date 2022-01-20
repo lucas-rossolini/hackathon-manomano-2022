@@ -5,21 +5,17 @@ import "./App.scss";
 import Form from "./components/Form";
 
 function App() {
-  const [checkBoxTools, setCheckBoxTools] = useState(true);
   const [location, setLocation] = useState("");
   const [room, setRoom] = useState("");
   const [work, setWork] = useState("");
   const [keyWords, setKeyWords] = useState([]);
+  const [formFilled, setFormFilled] = useState(false);
   const [garden, setGarden] = useState("");
   useEffect(() => {
     const formResults = [];
     formResults.push(location, room, garden, work);
     setKeyWords(formResults);
   }, [location, room, garden, work]);
-
-  const handleCheckBoxTools = () => {
-    setCheckBoxTools(!checkBoxTools);
-  };
 
   const handleLocation = (value) => {
     setLocation(value);
@@ -39,21 +35,25 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route exact path="/" element={<Home keyWords={keyWords} />} />
+        <Route
+          exact
+          path="/"
+          element={<Home keyWords={keyWords} formFilled={formFilled} />}
+        />
         <Route exact path="*" element={<Page404 />} />
         <Route
           exact
           path="/projet"
           element={
             <Form
-              handleCheckBoxTools={handleCheckBoxTools}
-              checkBoxTools={checkBoxTools}
               room={room}
               handleRoom={handleRoom}
               location={location}
               handleLocation={handleLocation}
               handleWork={handleWork}
               work={work}
+              formFilled={formFilled}
+              setFormFilled={setFormFilled}
               garden={garden}
               handleGarden={handleGarden}
             />

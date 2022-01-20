@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import "./Results.scss";
 
@@ -49,6 +50,10 @@ import productsData from "../data/productsData";
 function Results({ keyWords }) {
   // const [myProductsArray, setMyProductsArray] = useState([]);
   // const formResults = ["bathroom", "bed"];
+  const [checkBoxTools, setCheckBoxTools] = useState(false);
+  const handleCheckBoxTools = () => {
+    setCheckBoxTools(!checkBoxTools);
+  };
   const myResults = [];
 
   for (let i = 0; i < keyWords.length; i += 1) {
@@ -58,7 +63,6 @@ function Results({ keyWords }) {
       }
     }
   }
-
   // const testResults = _.intersection(productsData[1].keywords, formResults);
   console.log(productsData[0].keywords);
   console.log(myResults);
@@ -149,8 +153,44 @@ function Results({ keyWords }) {
                 )}
               </span>
             </div>
+            <div>
+              {checkBoxTools === true ? (
+                ""
+              ) : (
+                <div className="toolList">
+                  tools needed:{" "}
+                  {data.toolsNeeded.map((tools) => (
+                    <a rel="noreferrer" href={tools.link} target="_blank">
+                      {tools.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
           </a>
         ))}
+      </div>
+      <label className="checkLabel" htmlFor="tools">
+        <input
+          type="checkbox"
+          className="checkTools"
+          name="tools"
+          value={checkBoxTools}
+          onClick={() => handleCheckBoxTools()}
+        />{" "}
+        I already have the tools
+      </label>
+      <div className="button">
+        <Link to="/">
+          <button className="buttonForm" type="submit">
+            Cancel
+          </button>
+        </Link>
+        <Link to="/">
+          <button className="buttonForm" type="submit">
+            Validate
+          </button>
+        </Link>
       </div>
     </section>
   );
