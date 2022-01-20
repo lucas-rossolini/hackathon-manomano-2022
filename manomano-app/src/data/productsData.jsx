@@ -279,6 +279,10 @@ const productsData = [
         name: "drill",
         link: "https://www.manomano.co.uk/search/drill",
       },
+      {
+        name: "level",
+        link: "https://www.manomano.co.uk/search/level",
+      },
     ],
     VideoAdvice: "https://www.youtube.com/watch?v=wki3wMAbtLg",
   },
