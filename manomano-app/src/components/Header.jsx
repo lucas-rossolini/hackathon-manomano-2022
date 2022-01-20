@@ -13,7 +13,11 @@ function Header() {
   return (
     <header className="header">
       <div className="header-first-level">
-        <div className="logo-manomano">
+        <div
+          role="presentation"
+          onClick={() => window.location.reload()}
+          className="logo-manomano"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="147"
