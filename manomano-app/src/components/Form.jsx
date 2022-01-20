@@ -1,13 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Form.scss";
 // import { FaChevronDown } from "react-icons/fa";
 
-function Form() {
-  const [area, setArea] = useState("");
-  const [budget, setBudget] = useState("");
-
+function Form({ area, setArea, budget, setBudget, handleCheckBoxTools }) {
   return (
     <div className="form">
       <h1 className="titleForm">Tell us about your project</h1>
@@ -62,8 +59,13 @@ function Form() {
           onChange={(event) => setBudget(event.target.value)}
         />
         <label className="label" htmlFor="tools">
-          <input type="checkbox" className="tools" name="tools" /> I already
-          have the tools
+          <input
+            type="checkbox"
+            className="tools"
+            name="tools"
+            onClick={() => handleCheckBoxTools()}
+          />{" "}
+          I already have the tools
         </label>
       </form>
       <div className="button">
