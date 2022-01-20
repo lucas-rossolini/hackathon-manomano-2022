@@ -111,7 +111,6 @@ function Results({ keyWords }) {
                 )}
               </span>
             </div>
-
             {checkBoxTools === true ? (
               ""
             ) : (
@@ -129,6 +128,9 @@ function Results({ keyWords }) {
                 ))}
               </div>
             )}
+            <a href={data.videoAdvice} target="_blank" rel="noreferrer">
+              Need a video advice ?
+            </a>
           </a>
         ))}
       </div>
