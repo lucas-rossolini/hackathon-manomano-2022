@@ -48,12 +48,12 @@ import productsData from "../data/productsData";
 
 function Results({ keyWords }) {
   // const [myProductsArray, setMyProductsArray] = useState([]);
-  const formResults = ["bathroom", "bed"];
+  // const formResults = ["bathroom", "bed"];
   const myResults = [];
 
-  for (let i = 0; i < formResults.length; i += 1) {
+  for (let i = 0; i < keyWords.length; i += 1) {
     for (let j = 0; j < productsData.length; j += 1) {
-      if (productsData[j].keywords.indexOf(formResults[i]) > -1) {
+      if (productsData[j].keywords.indexOf(keyWords[i]) > -1) {
         myResults.push(productsData[j]);
       }
     }
@@ -63,7 +63,7 @@ function Results({ keyWords }) {
   console.log(productsData[0].keywords);
   console.log(myResults);
   // setMyProductsArray(myResults);
-  
+
   return (
     <section className="listingProducts">
       <div className="listingHeader">

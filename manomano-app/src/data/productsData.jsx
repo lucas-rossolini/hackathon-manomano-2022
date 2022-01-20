@@ -219,17 +219,47 @@ const productsData = [
     freeDelivery: false,
     keywords: ["outside", "pruning", "trees"],
     toolsNeeded: [
-      { name: "Tree loppers", link: "https://www.manomano.co.uk/tree-loppers-1732" },
-      { name: "Electric pole pruners", link: "https://www.manomano.co.uk/electric-pole-pruners-4199" },
-      { name: "Petrol pole pruners", link: "https://www.manomano.co.uk/petrol-pole-pruners-4029" },
+      {
+        name: "Tree loppers",
+        link: "https://www.manomano.co.uk/tree-loppers-1732",
+      },
+      {
+        name: "Electric pole pruners",
+        link: "https://www.manomano.co.uk/electric-pole-pruners-4199",
+      },
+      {
+        name: "Petrol pole pruners",
+        link: "https://www.manomano.co.uk/petrol-pole-pruners-4029",
+      },
       { name: "Ladders", link: "https://www.manomano.co.uk/ladders-1070" },
-      { name: "Wheelbarrows", link: "https://www.manomano.co.uk/wheelbarrows-and-trolleys-893" },
-      { name: "Gardening trousers", link: "https://www.manomano.co.uk/gardening-trousers-1868" },
-      { name: "Gardening gloves", link: "https://www.manomano.co.uk/gardening-gloves-3839" },
-      { name: "Security shoes", link: "https://www.manomano.co.uk/footwear-and-accessories-3869" },
-      { name: "Safety goggles", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
-      { name: "Ear defenders", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
-      { name: "Forest helmet", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+      {
+        name: "Wheelbarrows",
+        link: "https://www.manomano.co.uk/wheelbarrows-and-trolleys-893",
+      },
+      {
+        name: "Gardening trousers",
+        link: "https://www.manomano.co.uk/gardening-trousers-1868",
+      },
+      {
+        name: "Gardening gloves",
+        link: "https://www.manomano.co.uk/gardening-gloves-3839",
+      },
+      {
+        name: "Security shoes",
+        link: "https://www.manomano.co.uk/footwear-and-accessories-3869",
+      },
+      {
+        name: "Safety goggles",
+        link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889",
+      },
+      {
+        name: "Ear defenders",
+        link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889",
+      },
+      {
+        name: "Forest helmet",
+        link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889",
+      },
     ],
     videoAdvice:
       "https://www.youtube.com/watch?v=q1IHqAZxLrc&ab_channel=Lowe%27sHomeImprovement",
@@ -249,18 +279,42 @@ const productsData = [
     freeDelivery: true,
     keywords: ["outside", "sheds", "garden", "metal"],
     toolsNeeded: [
-      { name: "Cement mixer", link: "https://www.manomano.co.uk/search/cement+mixer" },
+      {
+        name: "Cement mixer",
+        link: "https://www.manomano.co.uk/search/cement+mixer",
+      },
       { name: "Shovel", link: "https://www.manomano.co.uk/shovels-1746" },
-      { name: "Wheelbarrow", link: "https://www.manomano.co.uk/wheelbarrows-and-trolleys-893" },
-      { name: "Hammer", link: "https://www.manomano.co.uk/hammers-and-mallets-492" },
+      {
+        name: "Wheelbarrow",
+        link: "https://www.manomano.co.uk/wheelbarrows-and-trolleys-893",
+      },
+      {
+        name: "Hammer",
+        link: "https://www.manomano.co.uk/hammers-and-mallets-492",
+      },
       { name: "Wood glue", link: "https://www.manomano.co.uk/wood-glue-1126" },
       { name: "Drill", link: "https://www.manomano.co.uk/drills-465" },
-      { name: "Square", link: "https://www.manomano.co.uk/measuring-squares-1236" },
+      {
+        name: "Square",
+        link: "https://www.manomano.co.uk/measuring-squares-1236",
+      },
       { name: "Work clothes", link: "https://www.manomano.co.uk/workwear-557" },
-      { name: "Gardening gloves", link: "https://www.manomano.co.uk/gardening-gloves-3839" },
-      { name: "Security shoes", link: "https://www.manomano.co.uk/footwear-and-accessories-3869" },
-      { name: "Safety goggles", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
-      { name: "Ear defenders", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+      {
+        name: "Gardening gloves",
+        link: "https://www.manomano.co.uk/gardening-gloves-3839",
+      },
+      {
+        name: "Security shoes",
+        link: "https://www.manomano.co.uk/footwear-and-accessories-3869",
+      },
+      {
+        name: "Safety goggles",
+        link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889",
+      },
+      {
+        name: "Ear defenders",
+        link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889",
+      },
     ],
     videoAdvice:
       "https://www.youtube.com/watch?v=yFGR-Eg5lag&ab_channel=iLikeSheds",
@@ -278,15 +332,33 @@ const productsData = [
     freeDelivery: true,
     keywords: ["outside", "sheds", "garden", "wood"],
     toolsNeeded: [
-      { name: "Hammer", link: "https://www.manomano.co.uk/hammers-and-mallets-492" },
+      {
+        name: "Hammer",
+        link: "https://www.manomano.co.uk/hammers-and-mallets-492",
+      },
       { name: "Wood glue", link: "https://www.manomano.co.uk/wood-glue-1126" },
       { name: "Drill", link: "https://www.manomano.co.uk/drills-465" },
-      { name: "Square", link: "https://www.manomano.co.uk/measuring-squares-1236" },
+      {
+        name: "Square",
+        link: "https://www.manomano.co.uk/measuring-squares-1236",
+      },
       { name: "Work clothes", link: "https://www.manomano.co.uk/workwear-557" },
-      { name: "Gardening gloves", link: "https://www.manomano.co.uk/gardening-gloves-3839" },
-      { name: "Security shoes", link: "https://www.manomano.co.uk/footwear-and-accessories-3869" },
-      { name: "Safety goggles", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
-      { name: "Ear defenders", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+      {
+        name: "Gardening gloves",
+        link: "https://www.manomano.co.uk/gardening-gloves-3839",
+      },
+      {
+        name: "Security shoes",
+        link: "https://www.manomano.co.uk/footwear-and-accessories-3869",
+      },
+      {
+        name: "Safety goggles",
+        link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889",
+      },
+      {
+        name: "Ear defenders",
+        link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889",
+      },
     ],
     videoAdvice:
       "https://www.youtube.com/watch?v=NQ-3Qt6lbkU&t=55s&ab_channel=B%26Q",
