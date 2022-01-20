@@ -5,7 +5,7 @@ import "./Results.scss";
 
 import productsData from "../data/productsData";
 
-function Results({ keyWords }) {
+function Results({ keyWords, handleBasket }) {
   console.log(keyWords);
   const [checkBoxTools, setCheckBoxTools] = useState(false);
   const handleCheckBoxTools = () => {
@@ -154,7 +154,11 @@ function Results({ keyWords }) {
         </button>
 
         <Link to="basket">
-          <button className="buttonForm" type="button">
+          <button
+            onClick={() => handleBasket(myResults)}
+            className="buttonForm"
+            type="button"
+          >
             Validate
           </button>
         </Link>

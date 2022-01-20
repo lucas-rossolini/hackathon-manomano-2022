@@ -806,3 +806,35 @@ body {
   font-family: Open Sans, mm-main, arial, sans-serif;
   font-size: 14px;
 }
+
+.recap {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+
+.recap-order {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.recap-order {
+  li {
+    margin-top: 10px;
+    font-weight: 500;
+    width: 100%;
+    .name-products {
+      max-width: 300px;
+      max-height: 30px;
+      overflow-x: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    span {
+      background-color: #29b9ad;
+      border-radius: 5px;
+    }
+  }
+}
