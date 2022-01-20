@@ -7,7 +7,6 @@
   -webkit-justify-content: center;
   justify-content: center;
   font-family: "Open Sans", sans-serif;
-  margin-top: 16px;
 }
 
 .products-layout {
@@ -38,6 +37,7 @@
   background-color: #fff;
   text-decoration: none;
   outline: none;
+  margin-top: 16px;
 }
 
 .visual-details {
@@ -335,6 +335,137 @@ sup {
   width: 100%;
 }
 
+.toolList::-webkit-scrollbar {
+  display: none;
+}
+
+.toolList {
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+}
+
 .toolsLink {
   margin-left: 4px;
+}
+
+.lazyListingPagination {
+  z-index: 10;
+  position: relative;
+  grid-area: pagination;
+  margin: 32px 20px;
+}
+
+.pagination-nav {
+  font-variant-numeric: tabular-nums;
+}
+
+.pagination-title {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.pagination-orderedList {
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ecedf0;
+  border-radius: 4px;
+  color: #505971;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.pagination-li {
+  line-height: 1;
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+.filler {
+  margin-left: 0;
+}
+
+.pagination-item-disable {
+  color: #b1b5c0;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.pagination-item {
+  display: block;
+  border-radius: 4px;
+  margin: 8px;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  color: currentColor;
+  text-decoration: none;
+}
+
+.svg_preview-page {
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  fill: currentColor;
+
+  flex-shrink: 0;
+  user-select: none;
+  position: relative;
+  font-size: 1.5rem;
+  transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.svg_next-page {
+  margin: auto;
+  width: 24px;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  fill: currentColor;
+
+  flex-shrink: 0;
+  user-select: none;
+  position: relative;
+  font-size: 1.5rem;
+  transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.pagination-button-page-1 {
+  background: #505971;
+  color: #fff;
+  font-weight: 700;
+
+  cursor: not-allowed;
+  pointer-events: none;
+
+  display: block;
+  border-radius: 4px;
+  margin: 8px;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  text-decoration: none;
+}
+
+.pagination-button-page {
+  display: block;
+  border-radius: 4px;
+  margin: 8px;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  color: currentColor;
+  text-decoration: none;
 }
