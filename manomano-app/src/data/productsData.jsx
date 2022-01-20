@@ -28,7 +28,7 @@ const productsData = [
     priceInt: 39,
     priceDec: 57,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "bathroom", "plumber"],
     toolsNeeded: [
       {
         name: "pressure reducer",
@@ -57,12 +57,12 @@ const productsData = [
     img: "https://cdn.manomano.com/images/images_products/4029359/L/8756408_1.jpg",
     brandName: "ARCHITEKT",
     logo: "https://cdn.manomano.com/brand-architeckt-261164.png",
-    rate: 4.5,
+    rate: 45,
     rateNumber: 204,
     priceInt: 69,
     priceDec: 97,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "bathroom", "plumber", "shower"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -88,7 +88,7 @@ const productsData = [
     priceInt: 14,
     priceDec: 88,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "floor", "wall", "decoration", "bathroom"],
     toolsNeeded: [
       { name: "sander", link: "https://www.manomano.co.uk/search/sander" },
       { name: "level", link: "https://www.manomano.co.uk/search/level" },
@@ -116,12 +116,12 @@ const productsData = [
     img: "https://cdn.manomano.com/elegant-800-x-500mm-backlit-led-illuminated-bathroom-mirror-with-light-sensor-demister-P-6078297-12324289_1.jpg",
     brandName: "ELEGANT",
     logo: "https://cdn.manomano.com/brand-elegant-116460.jpg",
-    rate: 4.5,
+    rate: 45,
     rateNumber: 71,
     priceInt: 91,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "bathroom", "bedroom", "decoration", "wall"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -146,7 +146,7 @@ const productsData = [
     priceInt: 15,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "floor", "bathroom"],
     toolsNeeded: [
       { name: "trowel", link: "https://www.manomano.co.uk/search/trowel" },
       {
@@ -181,7 +181,7 @@ const productsData = [
     priceInt: 49,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "bathroom", "security", "ordering"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -215,7 +215,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "bedroom", "wardrobe"],
     toolsNeeded: [
       {
         name: "screwdriver",
@@ -235,7 +235,7 @@ const productsData = [
     priceInt: 169,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["interior", "bedroom", "bed"],
     toolsNeeded: "already provided",
     VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
   },

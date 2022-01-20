@@ -119,7 +119,61 @@
   font-size: 16px;
   width: 5em;
   height: 1em;
-  background: url("../assets/images/stars.svg") no-repeat 0 0/100% auto;
+}
+
+.rate0 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 0;
+}
+
+.rate05 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -17px;
+}
+
+.rate1 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -33px;
+}
+
+.rate15 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -49px;
+}
+
+.rate2 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -65px;
+}
+
+.rate25 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -81px;
+}
+
+.rate3 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -97px;
+}
+
+.rate35 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -113px;
+}
+
+.rate4 {
+  background: url("../assets/images/stars.svg") 0 0/100% auto;
+  background-position: 0 -130px;
+}
+
+.rate45 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -145px;
+}
+
+.rate5 {
+  background: url("../assets/images/stars.svg")  0 0/100% auto;
+  background-position: 0 -160px;
 }
 
 .rateNumber {
@@ -205,4 +259,34 @@ sup {
   height: auto;
   font-size: 1.5rem;
   transition: fill 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.listingHeader {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  text-align: center;
+  padding: 16px;
+
+  z-index: 10;
+  position: relative;
+  grid-area: header;
+  overflow: hidden;
+}
+
+.listingHeader-title {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+
+  font-weight: 700;
+}
+
+.listingProducts {
+  margin-bottom: 200px;
 }
