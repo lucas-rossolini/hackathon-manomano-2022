@@ -145,13 +145,16 @@ function Results({ keyWords }) {
         I already have the tools
       </label>
       <div className="button">
+        <button
+          onClick={() => window.location.reload()}
+          className="buttonForm"
+          type="button"
+        >
+          Cancel
+        </button>
+
         <Link to="/">
-          <button className="buttonForm" type="submit">
-            Cancel
-          </button>
-        </Link>
-        <Link to="/">
-          <button className="buttonForm" type="submit">
+          <button className="buttonForm" type="button">
             Validate
           </button>
         </Link>
