@@ -100,6 +100,19 @@ function Form({
             </select>
           </label>
         )}
+        <label className="label" htmlFor="area">
+          Area
+          <input className="input" id="area" type="text" placeholder="20 m²" />
+        </label>
+        <label className="label" htmlFor="budget">
+          budget
+          <input
+            className="input"
+            id="budget"
+            type="text"
+            placeholder="1500 €"
+          />
+        </label>
       </form>
       <div className="button">
         <Link to="/">
