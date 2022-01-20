@@ -1,19 +1,17 @@
 import React from "react";
-
-import { Header, Footer } from "components";
-
+import { Header, Footer, Results, HomeComponent } from "../components";
 import "./Home.scss";
 
-const Home = () => (
-  <>
-    <Header />
+function Home({ keyWords, formFilled }) {
+  return (
+    <>
+      <Header />
 
-    <main className="home">
-      <h1>Home Here !</h1>
-    </main>
+      {formFilled ? <Results keyWords={keyWords} /> : <HomeComponent />}
 
-    <Footer />
-  </>
-);
+      <Footer />
+    </>
+  );
+}
 
 export default Home;
