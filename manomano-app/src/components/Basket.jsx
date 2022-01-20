@@ -108,6 +108,19 @@ function Basket() {
           </section>
         </article>
         <div className="Layout_pageContainer__R1PIZ">
+          <div className="FlashMessages_flashMessage__a_1f7 CartPage_flashMessage__ChRkw FlashMessages_withoutHeight__JMNHL" />
+          <p
+            data-testid="cart-title"
+            className="Title_root__67XkZ Title_empty__4qmZg root_c380a67c body1_c380a67c bold_c380a67c primaryDark_c380a67c"
+          >
+            Your basket's empty.
+          </p>
+          <p
+            data-testid="cart-empty"
+            className="Empty_root__Va08b root_c380a67c body2_c380a67c regular_c380a67c primaryDark_c380a67c"
+          >
+            How about taking a look at our catalogue?
+          </p>
           <svg width="328" height="161" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fillRule="evenodd">
               <path
@@ -187,18 +200,6 @@ function Basket() {
           <article className="Layout_leftColumn__yq32a">
             <section className="CartPage_content__pcGNd">
               <div className="FlashMessages_flashMessage__a_1f7 CartPage_flashMessage__ChRkw FlashMessages_withoutHeight__JMNHL" />
-              <p
-                data-testid="cart-title"
-                className="Title_root__67XkZ Title_empty__4qmZg root_c380a67c body1_c380a67c bold_c380a67c primaryDark_c380a67c"
-              >
-                Your basket's empty.
-              </p>
-              <p
-                data-testid="cart-empty"
-                className="Empty_root__Va08b root_c380a67c body2_c380a67c regular_c380a67c primaryDark_c380a67c"
-              >
-                How about taking a look at our catalogue?
-              </p>
               <p className="Empty_connect__jQQUo root_c380a67c body2_c380a67c regular_c380a67c primaryDark_c380a67c">
                 Log in to access your basket
                 <a
