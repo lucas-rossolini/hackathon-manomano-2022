@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import "./Form.scss";
 
 function Form({
+  handleArea,
+  area,
+  budget,
+  handleBudget,
+  handleCheckBoxTools,
+  checkBoxTools,
   room,
   handleRoom,
   location,
@@ -100,6 +106,38 @@ function Form({
             </select>
           </label>
         )}
+        <label className="label" htmlFor="area">
+          Area
+          <input
+            className="input"
+            id="area"
+            type="text"
+            value={area}
+            placeholder="20 m²"
+            onChange={(event) => handleArea(event.target.value)}
+          />
+        </label>
+        <label className="label" htmlFor="budget">
+          budget
+          <input
+            className="input"
+            id="budget"
+            type="text"
+            value={budget}
+            placeholder="1500 €"
+            onChange={(event) => handleBudget(event.target.value)}
+          />
+        </label>
+        <label className="labelcheckbox" htmlFor="tools">
+          <input
+            type="checkbox"
+            className="tools"
+            name="tools"
+            value={checkBoxTools}
+            onClick={() => handleCheckBoxTools()}
+          />{" "}
+          I already have the tools
+        </label>
       </form>
       <div className="button">
         <Link to="/">

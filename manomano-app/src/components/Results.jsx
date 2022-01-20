@@ -5,51 +5,8 @@ import "./Results.scss";
 
 import productsData from "../data/productsData";
 
-// const datas = [
-//   {
-//     name: "Élagueuse thermique sur perche, 52 cm3, 3 CV, longueur 4.15 mètres",
-//     link: "https://www.manomano.fr/p/elagueuse-thermique-sur-perche-52-cm3-3-cv-longueur-415-metres-41203647",
-//     img: "https://cdn.manomano.com/elagueuse-thermique-sur-perche-52-cm3-3-cv-longueur-415-metres-P-4935052-40633584_1.jpg",
-//     brandName: "GT Garden",
-//     logo: "https://cdn.manomano.com/marque-gt-garden-3921.png",
-//     rate: 4,
-//     rateNumber: 546,
-//     priceInt: 164,
-//     priceDec: 80,
-//     freeDelivery: true,
-//     keywords: [],
-//   },
-//   {
-//     name: "Élagueuse thermique sur perche, 52 cm3, 3 CV, longueur 4.15 mètres",
-//     link: "",
-//     img: "https://cdn.manomano.com/elagueuse-thermique-sur-perche-52-cm3-3-cv-longueur-415-metres-P-4935052-40633584_1.jpg",
-//     brandName: "GT Garden",
-//     logo: "https://cdn.manomano.com/marque-gt-garden-3921.png",
-//     rate: 4,
-//     rateNumber: 546,
-//     priceInt: 164,
-//     priceDec: 80,
-//     freeDelivery: false,
-//     keywords: [],
-//   },
-//   {
-//     name: "Élagueuse thermique sur perche, 52 cm3, 3 CV, longueur 4.15 mètres",
-//     link: "",
-//     img: "https://cdn.manomano.com/elagueuse-thermique-sur-perche-52-cm3-3-cv-longueur-415-metres-P-4935052-40633584_1.jpg",
-//     brandName: "GT Garden",
-//     logo: "https://cdn.manomano.com/marque-gt-garden-3921.png",
-//     rate: 4,
-//     rateNumber: 546,
-//     priceInt: 164,
-//     priceDec: 80,
-//     freeDelivery: true,
-//     keywords: [],
-//   },
-// ];
-
 function Results({ keyWords }) {
-  // const [myProductsArray, setMyProductsArray] = useState([]);
-  // const formResults = ["bathroom", "bed"];
+  console.log(keyWords);
   const [checkBoxTools, setCheckBoxTools] = useState(false);
   const handleCheckBoxTools = () => {
     setCheckBoxTools(!checkBoxTools);
@@ -63,10 +20,6 @@ function Results({ keyWords }) {
       }
     }
   }
-  // const testResults = _.intersection(productsData[1].keywords, formResults);
-  console.log(productsData[0].keywords);
-  console.log(myResults);
-  // setMyProductsArray(myResults);
 
   return (
     <section className="listingProducts">
@@ -77,7 +30,12 @@ function Results({ keyWords }) {
       </div>
       <div className="products-layout listing-products">
         {myResults.map((data) => (
-          <a className="product-link" href={data.link}>
+          <a
+            className="product-link"
+            href={data.link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <div className="visual-details">
               <img className="product-img" src={data.img} alt={data.name} />
               <div className="product-logos">
@@ -153,20 +111,24 @@ function Results({ keyWords }) {
                 )}
               </span>
             </div>
-            <div>
-              {checkBoxTools === true ? (
-                ""
-              ) : (
-                <div className="toolList">
-                  tools needed:{" "}
-                  {data.toolsNeeded.map((tools) => (
-                    <a rel="noreferrer" href={tools.link} target="_blank">
-                      {tools.name}
-                    </a>
-                  ))}
-                </div>
-              )}
-            </div>
+
+            {checkBoxTools === true ? (
+              ""
+            ) : (
+              <div className="toolList">
+                tools needed:{" "}
+                {data.toolsNeeded.map((tools, i, row) => (
+                  <a
+                    className="toolsLink"
+                    rel="noreferrer"
+                    href={tools.link}
+                    target="_blank"
+                  >
+                    {tools.name} {i + 1 === row.length ? "" : "/"}
+                  </a>
+                ))}
+              </div>
+            )}
           </a>
         ))}
       </div>

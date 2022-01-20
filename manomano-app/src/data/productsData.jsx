@@ -14,6 +14,106 @@ const productsData = [
     freeDelivery: true,
     keywords: [],
   },
+  {
+    id: 17,
+    name: "Terratek 550W Electric Hand Held Paint Sprayer, 1 x 800ml Paint Pots, Paint Fence Sprayer",
+    link: "https://www.manomano.co.uk/p/terratek-paint-sprayer-550w-diy-electric-spray-gun-with-3-spray-patterns-1-x-800ml-paint-cups-hvlp-hand-held-spray-gun-system-fence-sprayer-adjustable-valve-painting-varnishing-lacquering-16744742",
+    img: "https://cdn.manomano.com/terratek-550w-electric-hand-held-paint-sprayer-1-x-800ml-paint-pots-paint-fence-sprayer-P-7374536-17064218_1.jpg",
+    brandName: "",
+    logo: "",
+    rate: 3,
+    rateNumber: 2,
+    priceInt: 29,
+    priceDec: 99,
+    freeDelivery: true,
+    keywords: ["peint"],
+    toolsNeeded: [
+      {
+        name: "none",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: "Single bowl kitchen sink plumbing kit with appliance connector (340710)",
+    link: "https://www.manomano.co.uk/p/single-bowl-kitchen-sink-plumbing-kit-with-appliance-connector-340710-8207940",
+    img: "https://cdn.manomano.com/single-bowl-kitchen-sink-plumbing-kit-with-appliance-connector-340710-P-851385-8505854_1.jpg",
+    brandName: "",
+    logo: "",
+    rate: "",
+    rateNumber: "",
+    priceInt: 10,
+    priceDec: 49,
+    freeDelivery: false,
+    keywords: ["plumbing", "restoration"],
+    toolsNeeded: [
+      {
+        name: "screwdriver",
+        link: "https://www.manomano.co.uk/search/screwdriver",
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: "1600x480mm Anthracite Designer Radiator Vertical Oval Column Single Panel Rad",
+    link: "https://www.manomano.co.uk/p/1600x480mm-anthracite-designer-radiator-vertical-oval-column-single-panel-rad-14714289?model_id=14714263",
+    img: "https://cdn.manomano.com/1600x360mm-anthracite-designer-radiator-vertical-oval-column-single-panel-rad-P-4029359-15034098_1.jpg",
+    brandName: "DURATHERME",
+    logo: "https://cdn.manomano.com/brand-duratherm-261159.png",
+    rate: 45,
+    rateNumber: 285,
+    priceInt: 94,
+    priceDec: 97,
+    freeDelivery: true,
+    keywords: ["restoration", "heat"],
+    toolsNeeded: [
+      {
+        name: "screwdriver",
+        link: "https://www.manomano.co.uk/search/screwdriver",
+      },
+    ],
+  },
+  {
+    id: 17,
+    name: "Bluespot 42mm Ratchet PVC Pipe Cutter",
+    link: "https://www.manomano.co.uk/p/bluespot-42mm-ratchet-pvc-pipe-cutter-41319107",
+    img: "https://cdn.manomano.com/bluespot-42mm-ratchet-pvc-pipe-cutter-P-588118-2232007_1.jpg",
+    brandName: "",
+    logo: "",
+    rate: "",
+    rateNumber: "",
+    priceInt: 7,
+    priceDec: 49,
+    freeDelivery: true,
+    keywords: ["plumbing"],
+    toolsNeeded: [
+      {
+        name: "none",
+        link: "",
+      },
+    ],
+  },
+  {
+    id: 18,
+    name: "Sealey Spray Gun Kit Oil Water or Based Paint Stains Interior Exterior HVLP3000",
+    link: "https://www.manomano.co.uk/catalogue/p/sealey-spray-gun-kit-oil-water-or-based-paint-stains-interior-exterior-hvlp3000-41294601",
+    img: "https://cdn.manomano.com/sealey-spray-gun-kit-oil-water-or-based-paint-stains-interior-exterior-hvlp3000-P-10264286-28374409_1.jpg",
+    brandName: "SEALEY",
+    logo: "https://cdn.manomano.com/brand-sealey-34886.jpg",
+    rate: 5,
+    rateNumber: 1,
+    priceInt: 102,
+    priceDec: 95,
+    freeDelivery: true,
+    keywords: ["peint"],
+    toolsNeeded: [
+      {
+        name: "none",
+        link: "",
+      },
+    ],
+  },
   // Fin Lucas ----------------------------------
 
   // Vianney ------------------------------------
@@ -30,7 +130,7 @@ const productsData = [
     priceInt: 39,
     priceDec: 57,
     freeDelivery: true,
-    keywords: ["bathroom", "plumber"],
+    keywords: ["plumbing"],
     toolsNeeded: [
       {
         name: "pressure reducer",
@@ -65,7 +165,7 @@ const productsData = [
     priceInt: 69,
     priceDec: 97,
     freeDelivery: true,
-    keywords: ["bathroom", "plumber", "shower"],
+    keywords: ["plumbing", "shower"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -92,7 +192,7 @@ const productsData = [
     priceInt: 14,
     priceDec: 88,
     freeDelivery: true,
-    keywords: ["floor", "wall", "decoration", "bathroom"],
+    keywords: ["floor", "wall", "decoration"],
     toolsNeeded: [
       { name: "sander", link: "https://www.manomano.co.uk/search/sander" },
       { name: "level", link: "https://www.manomano.co.uk/search/level" },
@@ -126,7 +226,7 @@ const productsData = [
     priceInt: 91,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["bathroom", "bedroom", "decoration", "wall"],
+    keywords: ["bedroom", "decoration", "wall"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -152,7 +252,7 @@ const productsData = [
     priceInt: 15,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["floor", "bathroom"],
+    keywords: ["floor"],
     toolsNeeded: [
       { name: "trowel", link: "https://www.manomano.co.uk/search/trowel" },
       {
@@ -187,7 +287,7 @@ const productsData = [
     priceInt: 49,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["bathroom", "security", "ordering"],
+    keywords: ["security", "ordering"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -403,7 +503,12 @@ const productsData = [
     priceDec: 95,
     freeDelivery: true,
     keywords: ["bedroom", "bed"],
-    toolsNeeded: ["already provided"],
+    toolsNeeded: [
+      {
+        name: "Already provided",
+        link: "",
+      },
+    ],
     VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
   },
   // tapisserie, vinyl
@@ -419,7 +524,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 49,
     freeDelivery: true,
-    keywords: ["inside"],
+    keywords: [],
     toolsNeeded: [
       {
         name: "Tool with Felt Squeegee",
@@ -441,7 +546,7 @@ const productsData = [
     priceInt: 27,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["inside"],
+    keywords: [],
     toolsNeeded: [
       {
         // perceuse
