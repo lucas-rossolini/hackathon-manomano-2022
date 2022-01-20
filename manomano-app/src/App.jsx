@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home, Page404 } from "./pages";
 import "./App.scss";
@@ -11,10 +11,17 @@ function App() {
   const [location, setLocation] = useState("");
   const [room, setRoom] = useState("");
   const [work, setWork] = useState("");
+  const [keyWords, setKeyWords] = useState([]);
+  useEffect(() => {
+    const formResults = [];
+    formResults.push(area, budget, location, room, work);
+    setKeyWords(formResults);
+
+    console.log("keyWords==>", keyWords);
+  }, [area, budget, location, room, work]);
 
   const handleCheckBoxTools = () => {
     setCheckBoxTools(!checkBoxTools);
-    console.log(checkBoxTools);
   };
 
   const handleArea = (value) => {
