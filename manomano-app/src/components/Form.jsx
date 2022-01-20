@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Form.scss";
 // import { FaChevronDown } from "react-icons/fa";
 
@@ -66,9 +67,11 @@ function Form() {
         </label>
       </form>
       <div className="button">
-        <button className="buttonForm" type="submit">
-          Cancel
-        </button>
+        <Link to="/">
+          <button className="buttonForm" type="submit">
+            Cancel
+          </button>
+        </Link>
         <button className="buttonForm" type="submit">
           Validate
         </button>

@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { Home, Page404 } from "./pages";
 import "./App.scss";
-// import Form from "./components/Form";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="*" element={<Page404 />} />
+        <Route exact path="/projet" element={<Form />} />
       </Routes>
     </div>
   );
