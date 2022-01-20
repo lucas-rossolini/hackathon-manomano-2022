@@ -1,12 +1,23 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import "./Form.scss";
 // import { FaChevronDown } from "react-icons/fa";
 
-function Form() {
-  const [area, setArea] = useState("");
-  const [budget, setBudget] = useState("");
-
+function Form({
+  handleArea,
+  area,
+  budget,
+  handleBudget,
+  handleCheckBoxTools,
+  checkBoxTools,
+  room,
+  handleRoom,
+  location,
+  handleLocation,
+  work,
+  handleWork,
+}) {
   return (
     <div className="form">
       <h1 className="titleForm">Tell us about your project</h1>
@@ -14,29 +25,47 @@ function Form() {
         <label className="label" htmlFor="form">
           Location
         </label>
-        <select name="location" className="select">
-          <option value="location1">interior</option>
-          <option value="location2">outside</option>
+        <select
+          onChange={(e) => handleLocation(e.target.value)}
+          value={location}
+          name="location"
+          className="select"
+        >
+          <option value="">-choice-</option>
+          <option value="inside">inside</option>
+          <option value="outside">outside</option>
         </select>
         <label className="label" htmlFor="room">
           Room
         </label>
-        <select name="room" className="select">
-          <option value="room1">bathroom</option>
-          <option value="room2">bedroom</option>
-          <option value="room2">kitchen</option>
-          <option value="room2">dining room</option>
+        <select
+          onChange={(e) => handleRoom(e.target.value)}
+          value={room}
+          name="room"
+          className="select"
+        >
+          <option value="">-choice-</option>
+          <option value="bathroom">bathroom</option>
+          <option value="bedroom">bedroom</option>
+          <option value="kitchen">kitchen</option>
+          <option value="dining room">dining room</option>
         </select>
         <label className="label" htmlFor="work">
           Type of work
         </label>
-        <select name="work" className="select">
-          <option className="option" value="work">
+        <select
+          onChange={(e) => handleWork(e.target.value)}
+          value={work}
+          name="work"
+          className="select"
+        >
+          <option value="">-choice-</option>
+          <option className="option" value="drill">
             drill
           </option>
-          <option value="work">sander</option>
-          <option value="work">key</option>
-          <option value="work">multi-tool</option>
+          <option value="sander">sander</option>
+          <option value="key">key</option>
+          <option value="multi-tool">multi-tool</option>
         </select>
         <label className="label" htmlFor="area">
           Area
@@ -47,7 +76,7 @@ function Form() {
           type="text"
           value={area}
           placeholder="20 m²"
-          onChange={(event) => setArea(event.target.value)}
+          onChange={(event) => handleArea(event.target.value)}
         />
         <label className="label" htmlFor="budget">
           budget
@@ -58,20 +87,39 @@ function Form() {
           type="text"
           value={budget}
           placeholder="1500 €"
-          onChange={(event) => setBudget(event.target.value)}
+          onChange={(event) => handleBudget(event.target.value)}
         />
         <label className="label" htmlFor="tools">
-          <input type="checkbox" className="tools" name="tools" /> I already
-          have the tools
+          <input
+            type="checkbox"
+            className="tools"
+            name="tools"
+            value={checkBoxTools}
+            onClick={() => handleCheckBoxTools()}
+          />{" "}
+          I already have the tools
         </label>
       </form>
       <div className="button">
-        <button className="buttonForm" type="submit">
-          Cancel
-        </button>
-        <button className="buttonForm" type="submit">
-          Validate
-        </button>
+        <Link to="/">
+          <button
+            onClick={() => {
+              handleArea("");
+              handleBudget("");
+              handleLocation("");
+              handleRoom("");
+            }}
+            className="buttonForm"
+            type="submit"
+          >
+            Cancel
+          </button>
+        </Link>
+        <Link to="/">
+          <button className="buttonForm" type="submit">
+            Validate
+          </button>
+        </Link>
       </div>
     </div>
   );
