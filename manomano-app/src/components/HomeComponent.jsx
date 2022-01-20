@@ -27,7 +27,7 @@ function HomeComponent() {
           <div className="carrousel-controls"> </div>
           <div className="carrousel-slider">
             {productsData.map((data) => (
-              <a href={data.link} className="slider-card">
+              <a key={data.name} href={data.link} className="slider-card">
                 <div className="visualDetails-carrousel">
                   <img
                     className="carrousel-img"
