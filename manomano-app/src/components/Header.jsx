@@ -48,9 +48,11 @@ function Header() {
         </div>
         <div className="container-identifiant-panier">
           <p className="sign-up">sign up</p>
-          <i>
-            <FontAwesomeIcon icon={faShoppingCart} />
-          </i>
+          <Link to="basket">
+            <i>
+              <FontAwesomeIcon icon={faShoppingCart} />
+            </i>
+          </Link>
         </div>
       </div>
       <div className="header-second-level">
