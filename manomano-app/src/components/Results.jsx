@@ -152,15 +152,19 @@ function Results({ keyWords }) {
                   ""
                 )}
               </span>
-              {console.log(data.toolsNeeded)}
+            </div>
+            <div>
               {checkBoxTools === true ? (
                 ""
               ) : (
-                <ul className="tools">
+                <div className="toolList">
+                  tools needed:{" "}
                   {data.toolsNeeded.map((tools) => (
-                    <li key={tools.name}>{tools.name}</li>
+                    <a rel="noreferrer" href={tools.link} target="_blank">
+                      {tools.name}
+                    </a>
                   ))}
-                </ul>
+                </div>
               )}
             </div>
           </a>
