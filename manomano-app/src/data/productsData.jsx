@@ -27,12 +27,8 @@ const productsData = [
     priceDec: 99,
     freeDelivery: true,
     keywords: ["peint"],
-    toolsNeeded: [
-      {
-        name: "none",
-        link: "",
-      },
-    ],
+    toolsNeeded: [],
+    videoAdvice: "",
   },
   {
     id: 15,
@@ -46,13 +42,14 @@ const productsData = [
     priceInt: 10,
     priceDec: 49,
     freeDelivery: false,
-    keywords: ["plumbing", "restoration"],
+    keywords: ["plumbing", "material"],
     toolsNeeded: [
       {
         name: "screwdriver",
         link: "https://www.manomano.co.uk/search/screwdriver",
       },
     ],
+    videoAdvice: "",
   },
   {
     id: 16,
@@ -73,6 +70,7 @@ const productsData = [
         link: "https://www.manomano.co.uk/search/screwdriver",
       },
     ],
+    videoAdvice: "",
   },
   {
     id: 17,
@@ -86,13 +84,9 @@ const productsData = [
     priceInt: 7,
     priceDec: 49,
     freeDelivery: true,
-    keywords: ["plumbing"],
-    toolsNeeded: [
-      {
-        name: "none",
-        link: "",
-      },
-    ],
+    keywords: ["plumbing", "tool"],
+    toolsNeeded: [],
+    videoAdvice: "",
   },
   {
     id: 18,
@@ -113,6 +107,7 @@ const productsData = [
         link: "",
       },
     ],
+    videoAdvice: "",
   },
   // Fin Lucas ----------------------------------
 
@@ -130,7 +125,7 @@ const productsData = [
     priceInt: 39,
     priceDec: 57,
     freeDelivery: true,
-    keywords: ["plumbing"],
+    keywords: ["plumbing", "furniture"],
     toolsNeeded: [
       {
         name: "pressure reducer",
@@ -165,7 +160,7 @@ const productsData = [
     priceInt: 69,
     priceDec: 97,
     freeDelivery: true,
-    keywords: ["plumbing", "shower"],
+    keywords: ["plumbing", "furniture"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
