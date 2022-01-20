@@ -68,6 +68,7 @@ function Results({ keyWords }) {
   console.log(productsData[0].keywords);
   console.log(myResults);
   // setMyProductsArray(myResults);
+
   return (
     <section className="listingProducts">
       <div className="listingHeader">
@@ -152,16 +153,20 @@ function Results({ keyWords }) {
                   ""
                 )}
               </span>
-              {console.log(data.toolsNeeded)}
-              {checkBoxTools === true ? (
-                ""
-              ) : (
-                <ul className="tools">
-                  {data.toolsNeeded.map((tools) => (
-                    <li key={tools.name}>{tools.name}</li>
-                  ))}
-                </ul>
-              )}
+              <div>
+                {checkBoxTools === true ? (
+                  ""
+                ) : (
+                  <div className="toolList">
+                    tools :
+                    {data.toolsNeeded.map((tools) => (
+                      <a rel="noreferrer" href={tools.link} target="_blank">
+                        {tools.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </a>
         ))}

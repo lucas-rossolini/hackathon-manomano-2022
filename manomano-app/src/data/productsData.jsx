@@ -403,7 +403,7 @@ const productsData = [
     priceDec: 95,
     freeDelivery: true,
     keywords: ["inside", "bedroom", "bed"],
-    toolsNeeded: "already provided",
+    toolsNeeded: ["already provided"],
     VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
   },
   // tapisserie, vinyl
