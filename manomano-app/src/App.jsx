@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Home, Page404 } from "./pages";
 import "./App.scss";
 import Form from "./components/Form";
+import Basket from "./components/Basket";
 
 function App() {
   const [location, setLocation] = useState("");
@@ -41,6 +42,7 @@ function App() {
           element={<Home keyWords={keyWords} formFilled={formFilled} />}
         />
         <Route exact path="*" element={<Page404 />} />
+        <Route exact path="basket" element={<Basket />} />
         <Route
           exact
           path="/projet"
