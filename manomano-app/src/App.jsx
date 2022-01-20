@@ -5,32 +5,17 @@ import "./App.scss";
 import Form from "./components/Form";
 
 function App() {
-  const [area, setArea] = useState("");
-  const [budget, setBudget] = useState("");
-  const [checkBoxTools, setCheckBoxTools] = useState(true);
   const [location, setLocation] = useState("");
   const [room, setRoom] = useState("");
   const [work, setWork] = useState("");
   const [keyWords, setKeyWords] = useState([]);
   const [formFilled, setFormFilled] = useState(false);
-
+  const [garden, setGarden] = useState("");
   useEffect(() => {
     const formResults = [];
-    formResults.push(area, budget, location, room, work);
+    formResults.push(location, room, garden, work);
     setKeyWords(formResults);
-  }, [area, budget, location, room, work]);
-
-  const handleCheckBoxTools = () => {
-    setCheckBoxTools(!checkBoxTools);
-  };
-
-  const handleArea = (value) => {
-    setArea(value);
-  };
-
-  const handleBudget = (value) => {
-    setBudget(value);
-  };
+  }, [location, room, garden, work]);
 
   const handleLocation = (value) => {
     setLocation(value);
@@ -43,6 +28,10 @@ function App() {
   const handleWork = (value) => {
     setWork(value);
   };
+  const handleGarden = (value) => {
+    setGarden(value);
+  };
+
   return (
     <div>
       <Routes>
@@ -57,12 +46,6 @@ function App() {
           path="/projet"
           element={
             <Form
-              handleArea={handleArea}
-              area={area}
-              budget={budget}
-              handleBudget={handleBudget}
-              handleCheckBoxTools={handleCheckBoxTools}
-              checkBoxTools={checkBoxTools}
               room={room}
               handleRoom={handleRoom}
               location={location}
@@ -71,6 +54,8 @@ function App() {
               work={work}
               formFilled={formFilled}
               setFormFilled={setFormFilled}
+              garden={garden}
+              handleGarden={handleGarden}
             />
           }
         />
