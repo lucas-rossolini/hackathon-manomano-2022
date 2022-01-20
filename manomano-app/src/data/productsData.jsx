@@ -548,8 +548,135 @@ const productsData = [
         name: "drill",
         link: "https://www.manomano.co.uk/search/drill",
       },
+      {
+        name: "level",
+        link: "https://www.manomano.co.uk/search/level",
+      },
     ],
     VideoAdvice: "https://www.youtube.com/watch?v=wki3wMAbtLg",
+  },
+  {
+    // commode
+    name: "Riano 5 Drawer Chest of Drawers Bedroom Storage Furniture, White",
+    link: "https://www.manomano.co.uk/p/riano-5-drawer-chest-white-17449627",
+    img: "https://cdn.manomano.com/images/images_products/9885246/L/17767227_1.jpg",
+    brandName: "Riano",
+    logo: "",
+    rate: 4,
+    rateNumber: 51,
+    priceInt: 64,
+    priceDec: 95,
+    freeDelivery: true,
+    keywords: ["interior"],
+    toolsNeeded: [
+      {
+        name: "screwdriver",
+        link: "https://www.manomano.co.uk/search/screwdriver",
+      },
+    ],
+  },
+  {
+    // bathroom sink (lavabo)
+    name: "vidaXL Luxury Ceramic Basin Oval-shaped Sink 40 x 33 cm White - White",
+    link: "https://www.manomano.co.uk/p/luxury-ceramic-basin-oval-shaped-sink-white-40-x-33-cm-869815?model_id=869815",
+    img: "https://cdn.manomano.com/images/images_products/356281/L/1069022_1.jpg",
+    brandName: "vidalxl",
+    logo: "https://cdn.manomano.com/brand-vidaxl-261113.jpg",
+    rate: 45,
+    rateNumber: 737,
+    priceInt: 40,
+    priceDec: 49,
+    freeDelivery: true,
+    keywords: ["interior"],
+    toolsNeeded: [
+      {
+        // scilicone
+        name: "scilicone",
+        link: "https://www.manomano.co.uk/search/silicone",
+      },
+    ],
+    VideoAdvice: "https://www.youtube.com/watch?v=IrJcD7M40UQ",
+  },
+  {
+    // robinet
+    name: "Sauber Kitchen Mixer Tap with Pull Out Spray",
+    link: "https://www.manomano.co.uk/p/sauber-kitchen-mixer-tap-with-pull-out-spray-8455099",
+    img: "https://cdn.manomano.com/images/images_products/4029359/L/8755481_1.jpg",
+    brandName: "sauber",
+    logo: "https://cdn.manomano.com/brand-sauber-255435.png",
+    rate: 45,
+    rateNumber: 85,
+    priceInt: 69,
+    priceDec: 97,
+    freeDelivery: true,
+    keywords: ["interior"],
+    toolsNeeded: [
+      {
+        // scilicone
+        name: "scilicone",
+        link: "https://www.manomano.co.uk/search/silicone",
+      },
+      {
+        // clef multifonction
+        name: "Fontainebleau Sink Installation Tool, Multi-Purpose Faucet Clamp Wrench, Faucet Repair Toolfunction key",
+        link: "https://www.manomano.co.uk/p/faucet--sink-installer-wrench-for-kitchen-plumbing-repair-faucet-wrench-sink-installer-tool-multifunctional-basin-wrench-plumbing-tools-45447389",
+      },
+    ],
+    VideoAdvice: "https://www.youtube.com/watch?v=vpq_jFyf8Yo",
+  },
+  {
+    // pommeau de douche
+    name: "Bathroom Thermostatic Mixer Shower Set Square Chrome Twin Head Exposed Valve",
+    link: "https://www.manomano.co.uk/p/thermostatic-mixer-shower-set-square-chrome-twin-head-exposed-8455999",
+    img: "https://cdn.manomano.com/images/images_products/4029359/L/8756408_1.jpg",
+    brandName: "architeckt",
+    logo: "https://cdn.manomano.com/brand-architeckt-261164.png",
+    rate: 45,
+    rateNumber: 204,
+    priceInt: 44,
+    priceDec: 47,
+    freeDelivery: true,
+    keywords: ["interior"],
+    toolsNeeded: [
+      {
+        // perceuse
+        name: "drill",
+        link: "https://www.manomano.co.uk/search/drill",
+      },
+    ],
+    VideoAdvice: "https://www.youtube.com/watch?v=rzcAIb5JcXo",
+  },
+  {
+    // vitre de douche
+    name: "ELEGANT Walk In Shower Enclosure Screen Easy Clean 800mm",
+    link: "https://www.manomano.co.uk/p/elegant-frameless-wet-room-shower-screen-panel-8mm-easy-clean-glass-walk-in-shower-enclosure-15176157?model_id=15409622",
+    img: "https://cdn.manomano.com/images/images_products/8704378/L/15729447_1.jpg",
+    brandName: "ELEGANT",
+    logo: "https://cdn.manomano.com/brand-elegant-116460.jpg",
+    rate: 5,
+    rateNumber: 26,
+    priceInt: 109,
+    priceDec: 99,
+    freeDelivery: true,
+    keywords: ["interior"],
+    toolsNeeded: [
+      {
+        // perceuse
+        name: "drill",
+        link: "https://www.manomano.co.uk/search/drill",
+      },
+      {
+        // perceuse
+        name: "drill",
+        link: "https://www.manomano.co.uk/search/drill",
+      },
+      {
+        // scilicone
+        name: "scilicone",
+        link: "https://www.manomano.co.uk/search/silicone",
+      },
+    ],
+    VideoAdvice: "https://www.youtube.com/watch?v=QDyeS1_28yg",
   },
   // Fin Maxime ---------------------------------
 ];
