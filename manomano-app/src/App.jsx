@@ -12,6 +12,7 @@ function App() {
   const [keyWords, setKeyWords] = useState([]);
   const [formFilled, setFormFilled] = useState(false);
   const [garden, setGarden] = useState("");
+  const [basket, setBasket] = useState([]);
   useEffect(() => {
     const formResults = [];
     formResults.push(location, room, garden, work);
@@ -33,16 +34,26 @@ function App() {
     setGarden(value);
   };
 
+  const handleBasket = (value) => {
+    setBasket(value);
+  };
+
   return (
     <div>
       <Routes>
         <Route
           exact
           path="/"
-          element={<Home keyWords={keyWords} formFilled={formFilled} />}
+          element={
+            <Home
+              keyWords={keyWords}
+              formFilled={formFilled}
+              handleBasket={handleBasket}
+            />
+          }
         />
         <Route exact path="*" element={<Page404 />} />
-        <Route exact path="basket" element={<Basket />} />
+        <Route exact path="basket" element={<Basket basket={basket} />} />
         <Route
           exact
           path="/projet"

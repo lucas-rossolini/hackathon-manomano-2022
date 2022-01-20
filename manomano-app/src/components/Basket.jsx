@@ -3,7 +3,9 @@
 import React from "react";
 import "./Basket.scss";
 
-function Basket() {
+function Basket({ basket }) {
+  const newBasket = [...basket];
+  console.log(newBasket);
   return (
     <div className="Layout_pageContainer__R1PIZ">
       <div className="Layout_layout__J_AQA">
@@ -109,12 +111,27 @@ function Basket() {
         </article>
         <div className="Layout_pageContainer__R1PIZ">
           <div className="FlashMessages_flashMessage__a_1f7 CartPage_flashMessage__ChRkw FlashMessages_withoutHeight__JMNHL" />
-          <p
-            data-testid="cart-title"
-            className="Title_root__67XkZ Title_empty__4qmZg root_c380a67c body1_c380a67c bold_c380a67c primaryDark_c380a67c"
-          >
-            Your basket's empty.
-          </p>
+          {newBasket ? (
+            <>
+              <p className="recap">here is a recap of your order </p>
+              <ul className="recap-order">
+                {newBasket.map((elt) => (
+                  <li key={elt.name}>
+                    <p className="name-products">{elt.name}</p>
+
+                    <span>{` ${elt.priceInt}.${elt.priceDec} euros`}</span>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <p
+              data-testid="cart-title"
+              className="Title_root__67XkZ Title_empty__4qmZg root_c380a67c body1_c380a67c bold_c380a67c primaryDark_c380a67c"
+            >
+              Your basket's empty.
+            </p>
+          )}
           <p
             data-testid="cart-empty"
             className="Empty_root__Va08b root_c380a67c body2_c380a67c regular_c380a67c primaryDark_c380a67c"
