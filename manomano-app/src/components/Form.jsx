@@ -11,6 +11,12 @@ function Form({
   handleBudget,
   handleCheckBoxTools,
   checkBoxTools,
+  room,
+  handleRoom,
+  location,
+  handleLocation,
+  work,
+  handleWork,
 }) {
   return (
     <div className="form">
@@ -19,29 +25,47 @@ function Form({
         <label className="label" htmlFor="form">
           Location
         </label>
-        <select name="location" className="select">
-          <option value="location1">interior</option>
-          <option value="location2">outside</option>
+        <select
+          onChange={(e) => handleLocation(e.target.value)}
+          value={location}
+          name="location"
+          className="select"
+        >
+          <option value="">-choice-</option>
+          <option value="inside">inside</option>
+          <option value="outside">outside</option>
         </select>
         <label className="label" htmlFor="room">
           Room
         </label>
-        <select name="room" className="select">
-          <option value="room1">bathroom</option>
-          <option value="room2">bedroom</option>
-          <option value="room2">kitchen</option>
-          <option value="room2">dining room</option>
+        <select
+          onChange={(e) => handleRoom(e.target.value)}
+          value={room}
+          name="room"
+          className="select"
+        >
+          <option value="">-choice-</option>
+          <option value="bathroom">bathroom</option>
+          <option value="bedroom">bedroom</option>
+          <option value="kitchen">kitchen</option>
+          <option value="dining room">dining room</option>
         </select>
         <label className="label" htmlFor="work">
           Type of work
         </label>
-        <select name="work" className="select">
-          <option className="option" value="work">
+        <select
+          onChange={(e) => handleWork(e.target.value)}
+          value={work}
+          name="work"
+          className="select"
+        >
+          <option value="">-choice-</option>
+          <option className="option" value="drill">
             drill
           </option>
-          <option value="work">sander</option>
-          <option value="work">key</option>
-          <option value="work">multi-tool</option>
+          <option value="sander">sander</option>
+          <option value="key">key</option>
+          <option value="multi-tool">multi-tool</option>
         </select>
         <label className="label" htmlFor="area">
           Area
@@ -82,6 +106,8 @@ function Form({
             onClick={() => {
               handleArea("");
               handleBudget("");
+              handleLocation("");
+              handleRoom("");
             }}
             className="buttonForm"
             type="submit"

@@ -8,6 +8,9 @@ function App() {
   const [area, setArea] = useState("");
   const [budget, setBudget] = useState("");
   const [checkBoxTools, setCheckBoxTools] = useState(true);
+  const [location, setLocation] = useState("");
+  const [room, setRoom] = useState("");
+  const [work, setWork] = useState("");
 
   const handleCheckBoxTools = () => {
     setCheckBoxTools(!checkBoxTools);
@@ -21,6 +24,18 @@ function App() {
   const handleBudget = (value) => {
     setBudget(value);
   };
+
+  const handleLocation = (value) => {
+    setLocation(value);
+  };
+
+  const handleRoom = (value) => {
+    setRoom(value);
+  };
+
+  const handleWork = (value) => {
+    setWork(value);
+  };
   return (
     <div>
       <Routes>
@@ -28,7 +43,14 @@ function App() {
           exact
           path="/"
           element={
-            <Home area={area} checkBoxTools={checkBoxTools} budget={budget} />
+            <Home
+              area={area}
+              checkBoxTools={checkBoxTools}
+              budget={budget}
+              location={location}
+              room={room}
+              work={work}
+            />
           }
         />
         <Route exact path="*" element={<Page404 />} />
@@ -43,6 +65,12 @@ function App() {
               handleBudget={handleBudget}
               handleCheckBoxTools={handleCheckBoxTools}
               checkBoxTools={checkBoxTools}
+              room={room}
+              handleRoom={handleRoom}
+              location={location}
+              handleLocation={handleLocation}
+              handleWork={handleWork}
+              work={work}
             />
           }
         />
