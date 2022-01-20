@@ -43,14 +43,8 @@ const datas = [
   },
 ];
 
-function Results({ area, checkBoxTools, budget, room, location, work }) {
-  console.log(area);
-  console.log(checkBoxTools);
-  console.log(budget);
-  console.log(room);
-  console.log(location);
-  console.log(work);
-
+function Results({ keyWords }) {
+  console.log(keyWords);
   return (
     <div className="products-layout listing-products">
       {datas.map((data) => (

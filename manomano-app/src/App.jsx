@@ -16,8 +16,6 @@ function App() {
     const formResults = [];
     formResults.push(area, budget, location, room, work);
     setKeyWords(formResults);
-
-    console.log("keyWords==>", keyWords);
   }, [area, budget, location, room, work]);
 
   const handleCheckBoxTools = () => {
@@ -46,20 +44,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <Home
-              area={area}
-              checkBoxTools={checkBoxTools}
-              budget={budget}
-              location={location}
-              room={room}
-              work={work}
-            />
-          }
-        />
+        <Route exact path="/" element={<Home keyWords={keyWords} />} />
         <Route exact path="*" element={<Page404 />} />
         <Route
           exact
