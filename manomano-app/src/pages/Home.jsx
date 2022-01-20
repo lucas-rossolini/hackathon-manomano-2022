@@ -6,9 +6,7 @@ function Home() {
   return (
     <>
       <Header />
-
       <Results />
-
       <Footer />
     </>
   );

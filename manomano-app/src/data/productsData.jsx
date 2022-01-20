@@ -11,7 +11,7 @@ const productsData = [
     priceInt: 164,
     priceDec: 80,
     freeDelivery: true,
-    keywords: ["exterior"],
+    keywords: ["Outside"],
   },
   // Fin Lucas ----------------------------------
 
@@ -28,7 +28,7 @@ const productsData = [
     priceInt: 39,
     priceDec: 57,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         name: "pressure reducer",
@@ -62,7 +62,7 @@ const productsData = [
     priceInt: 69,
     priceDec: 97,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -77,7 +77,7 @@ const productsData = [
       "https://www.youtube.com/watch?v=iS2osn9tdnQ&ab_channel=BRICOFAMILIE",
   },
   {
-    // faillence
+    // faïence
     name: "Mosaic tile mirror kitchen backsplash and bathroom Brillo Gris",
     link: "https://www.manomano.co.uk/p/mosaic-tile-mirror-kitchen-backsplash-and-bathroom-brillo-gris-34753785",
     img: "https://cdn.manomano.com/mosaic-tile-mirror-kitchen-backsplash-and-bathroom-brillo-gris-P-833994-33300596_1.jpg",
@@ -88,7 +88,7 @@ const productsData = [
     priceInt: 14,
     priceDec: 88,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "sander", link: "https://www.manomano.co.uk/search/sander" },
       { name: "level", link: "https://www.manomano.co.uk/search/level" },
@@ -121,7 +121,7 @@ const productsData = [
     priceInt: 91,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -146,7 +146,7 @@ const productsData = [
     priceInt: 15,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "trowel", link: "https://www.manomano.co.uk/search/trowel" },
       {
@@ -181,7 +181,7 @@ const productsData = [
     priceInt: 49,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -198,13 +198,97 @@ const productsData = [
   // Fin Vianney --------------------------------
 
   // Camille ------------------------------------
+  // outside
+  // pruning
+  {
+    name: "Tree Pruning",
+    link: "https://www.manomano.co.uk/advice/how-to-prune-a-tree-8105",
+    img: "https://media.prod.bunnings.com.au/api/public/content/313f20992a4f467e88a3573ff1e6e854?v=9f00b688&t=w1100dpr1",
+    brandName: "",
+    logo: "",
+    rate: null,
+    priceInt: null,
+    priceDec: null,
+    freeDelivery: false,
+    keywords: ["outside", "pruning", "trees"],
+    toolsNeeded: [
+      { name: "Tree loppers", link: "https://www.manomano.co.uk/tree-loppers-1732" },
+      { name: "Electric pole pruners", link: "https://www.manomano.co.uk/electric-pole-pruners-4199" },
+      { name: "Petrol pole pruners", link: "https://www.manomano.co.uk/petrol-pole-pruners-4029" },
+      { name: "Ladders", link: "https://www.manomano.co.uk/ladders-1070" },
+      { name: "Wheelbarrows", link: "https://www.manomano.co.uk/wheelbarrows-and-trolleys-893" },
+      { name: "Gardening trousers", link: "https://www.manomano.co.uk/gardening-trousers-1868" },
+      { name: "Gardening gloves", link: "https://www.manomano.co.uk/gardening-gloves-3839" },
+      { name: "Security shoes", link: "https://www.manomano.co.uk/footwear-and-accessories-3869" },
+      { name: "Safety goggles", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+      { name: "Ear defenders", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+      { name: "Forest helmet", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+    ],
+    videoAdvice:
+      "https://www.youtube.com/watch?v=q1IHqAZxLrc&ab_channel=Lowe%27sHomeImprovement",
+  },
+
+  // garden sheds
+  {
+    name: "Shed with slanted roof - garden shed, metal shed, tool shed - grey",
+    link: "https://www.manomano.co.uk/p/garden-shed-with-slanted-roof-green-7245171?model_id=7232170",
+    img: "https://cdn.manomano.com/images/images_products/6399669/L/12200872_1.jpg",
+    brandName: "tectake",
+    logo: "https://cdn.manomano.com/brand-tectake-84153.png",
+    rate: 3.5,
+    priceInt: 209,
+    priceDec: 99,
+    freeDelivery: true,
+    keywords: ["outside", "sheds", "garden", "metal"],
+    toolsNeeded: [
+      { name: "Cement mixer", link: "https://www.manomano.co.uk/search/cement+mixer" },
+      { name: "Shovel", link: "https://www.manomano.co.uk/shovels-1746" },
+      { name: "Wheelbarrow", link: "https://www.manomano.co.uk/wheelbarrows-and-trolleys-893" },
+      { name: "Hammer", link: "https://www.manomano.co.uk/hammers-and-mallets-492" },
+      { name: "Wood glue", link: "https://www.manomano.co.uk/wood-glue-1126" },
+      { name: "Drill", link: "https://www.manomano.co.uk/drills-465" },
+      { name: "Square", link: "https://www.manomano.co.uk/measuring-squares-1236" },
+      { name: "Work clothes", link: "https://www.manomano.co.uk/workwear-557" },
+      { name: "Gardening gloves", link: "https://www.manomano.co.uk/gardening-gloves-3839" },
+      { name: "Security shoes", link: "https://www.manomano.co.uk/footwear-and-accessories-3869" },
+      { name: "Safety goggles", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+      { name: "Ear defenders", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+    ],
+    videoAdvice:
+      "https://www.youtube.com/watch?v=yFGR-Eg5lag&ab_channel=iLikeSheds",
+  },
+  {
+    name: "6' x 4' Forest Overlap Dip Treated Pent Wooden Shed",
+    link: "https://www.manomano.co.uk/catalogue/p/6-x-4-forest-overlap-dip-treated-pent-wooden-shed-23726335",
+    img: "https://cdn.manomano.com/images/images_products/2472202/L/24023207_1.jpg",
+    brandName: "",
+    logo: "",
+    rate: null,
+    priceInt: 379,
+    priceDec: 99,
+    freeDelivery: true,
+    keywords: ["outside", "sheds", "garden", "wood"],
+    toolsNeeded: [
+      { name: "Hammer", link: "https://www.manomano.co.uk/hammers-and-mallets-492" },
+      { name: "Wood glue", link: "https://www.manomano.co.uk/wood-glue-1126" },
+      { name: "Drill", link: "https://www.manomano.co.uk/drills-465" },
+      { name: "Square", link: "https://www.manomano.co.uk/measuring-squares-1236" },
+      { name: "Work clothes", link: "https://www.manomano.co.uk/workwear-557" },
+      { name: "Gardening gloves", link: "https://www.manomano.co.uk/gardening-gloves-3839" },
+      { name: "Security shoes", link: "https://www.manomano.co.uk/footwear-and-accessories-3869" },
+      { name: "Safety goggles", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+      { name: "Ear defenders", link: "https://www.manomano.co.uk/head-face-and-ear-protection-3889" },
+    ],
+    videoAdvice:
+      "https://www.youtube.com/watch?v=NQ-3Qt6lbkU&t=55s&ab_channel=B%26Q",
+  },
 
   // Fin Camille --------------------------------
 
   // Maxime -------------------------------------
   {
     // Chambre
-    // pendrie
+    // penderie
     name: "ELEGANT Black Modern High Gloss Soft Close 2 Doors Wardrobe with Metal Handles Includes a removable hanging rod and storage shelves",
     link: "https://www.manomano.co.uk/p/elegant-black-modern-high-gloss-soft-close-2-doors-wardrobe-with-metal-handles-includes-a-removable-hanging-rod-and-storage-shelves-23166444",
     img: "https://cdn.manomano.com/images/images_products/8704378/L/23463389_1.jpg",
@@ -215,7 +299,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         name: "screwdriver",
@@ -235,7 +319,7 @@ const productsData = [
     priceInt: 169,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: "already provided",
     VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
   },
@@ -251,7 +335,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 49,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         name: "Tool with Felt Squeegee",
@@ -272,7 +356,7 @@ const productsData = [
     priceInt: 27,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         // perceuse
