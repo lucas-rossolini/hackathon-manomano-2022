@@ -2,12 +2,11 @@ import React from "react";
 import { Header, Footer, Results } from "../components";
 import "./Home.scss";
 
-function Home() {
+function Home({ keyWords }) {
   return (
     <>
       <Header />
-
-      <Results />
+      <Results keyWords={keyWords} />
 
       <Footer />
     </>

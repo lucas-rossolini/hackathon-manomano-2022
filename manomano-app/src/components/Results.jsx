@@ -1,6 +1,4 @@
 import React from "react";
-// eslint-disable-next-line no-unused-vars
-// import _, { intersection } from "underscore";
 
 import "./Results.scss";
 
@@ -48,7 +46,7 @@ import productsData from "../data/productsData";
 //   },
 // ];
 
-function Results() {
+function Results({ keyWords }) {
   // const [myProductsArray, setMyProductsArray] = useState([]);
   const formResults = ["bathroom", "bed"];
   const myResults = [];
@@ -65,6 +63,7 @@ function Results() {
   console.log(productsData[0].keywords);
   console.log(myResults);
   // setMyProductsArray(myResults);
+  
   return (
     <section className="listingProducts">
       <div className="listingHeader">

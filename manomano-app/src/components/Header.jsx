@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -62,11 +63,13 @@ function Header() {
             <FontAwesomeIcon icon={faSearch} />
           </i>
         </div>
-        <button type="button">I have a project</button>
+        <Link to="projet">
+          <button type="button">I have a project</button>
+        </Link>
       </div>
       <ul className="list-sells">
         {sells.map((sell) => (
-          <li>{sell.name}</li>
+          <li key={sell.name}>{sell.name}</li>
         ))}
       </ul>
     </header>
