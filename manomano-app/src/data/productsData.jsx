@@ -11,7 +11,7 @@ const productsData = [
     priceInt: 164,
     priceDec: 80,
     freeDelivery: true,
-    keywords: ["exterior"],
+    keywords: ["Outside"],
   },
   // Fin Lucas ----------------------------------
 
@@ -28,7 +28,7 @@ const productsData = [
     priceInt: 39,
     priceDec: 57,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         name: "pressure reducer",
@@ -62,7 +62,7 @@ const productsData = [
     priceInt: 69,
     priceDec: 97,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -88,7 +88,7 @@ const productsData = [
     priceInt: 14,
     priceDec: 88,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "sander", link: "https://www.manomano.co.uk/search/sander" },
       { name: "level", link: "https://www.manomano.co.uk/search/level" },
@@ -121,7 +121,7 @@ const productsData = [
     priceInt: 91,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -146,7 +146,7 @@ const productsData = [
     priceInt: 15,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "trowel", link: "https://www.manomano.co.uk/search/trowel" },
       {
@@ -181,7 +181,7 @@ const productsData = [
     priceInt: 49,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       { name: "drill", link: "https://www.manomano.co.uk/search/drill" },
       {
@@ -198,7 +198,7 @@ const productsData = [
   // Fin Vianney --------------------------------
 
   // Camille ------------------------------------
-  // exterior
+  // outside
   // pruning
   {
     name: "Tree Pruning",
@@ -210,7 +210,7 @@ const productsData = [
     priceInt: null,
     priceDec: null,
     freeDelivery: false,
-    keywords: ["exterior", "pruning", "trees"],
+    keywords: ["outside", "pruning", "trees"],
     toolsNeeded: [
       { name: "Tree loppers", link: "https://www.manomano.co.uk/tree-loppers-1732" },
       { name: "Electric pole pruners", link: "https://www.manomano.co.uk/electric-pole-pruners-4199" },
@@ -239,7 +239,7 @@ const productsData = [
     priceInt: 209,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["exterior", "sheds", "garden", "metal"],
+    keywords: ["outside", "sheds", "garden", "metal"],
     toolsNeeded: [
       { name: "Cement mixer", link: "https://www.manomano.co.uk/search/cement+mixer" },
       { name: "Shovel", link: "https://www.manomano.co.uk/shovels-1746" },
@@ -267,7 +267,7 @@ const productsData = [
     priceInt: 379,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["exterior", "sheds", "garden", "wood"],
+    keywords: ["outside", "sheds", "garden", "wood"],
     toolsNeeded: [
       { name: "Hammer", link: "https://www.manomano.co.uk/hammers-and-mallets-492" },
       { name: "Wood glue", link: "https://www.manomano.co.uk/wood-glue-1126" },
@@ -299,7 +299,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         name: "screwdriver",
@@ -319,7 +319,7 @@ const productsData = [
     priceInt: 169,
     priceDec: 95,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: "already provided",
     VideoAdvice: "https://www.youtube.com/watch?v=f4yLBTJxJ_4",
   },
@@ -335,7 +335,7 @@ const productsData = [
     priceInt: 128,
     priceDec: 49,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         name: "Tool with Felt Squeegee",
@@ -356,7 +356,7 @@ const productsData = [
     priceInt: 27,
     priceDec: 99,
     freeDelivery: true,
-    keywords: ["interior"],
+    keywords: ["Inside"],
     toolsNeeded: [
       {
         // perceuse
