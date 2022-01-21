@@ -4,7 +4,6 @@ import "./Results.scss";
 import productsData from "../data/productsData";
 
 function Results({ keyWords, handleBasket }) {
-  
   const [checkBoxTools, setCheckBoxTools] = useState(false);
   const handleCheckBoxTools = () => {
     setCheckBoxTools(!checkBoxTools);
