@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
 import "./Results.scss";
-
 import productsData from "../data/productsData";
 
-function Results({ keyWords }) {
+function Results({ keyWords, handleBasket }) {
   const [checkBoxTools, setCheckBoxTools] = useState(false);
   const handleCheckBoxTools = () => {
     setCheckBoxTools(!checkBoxTools);
@@ -603,8 +601,12 @@ function Results({ keyWords }) {
           Cancel
         </button>
 
-        <Link to="/">
-          <button className="buttonForm" type="button">
+        <Link to="basket">
+          <button
+            onClick={() => handleBasket(myResults)}
+            className="buttonForm"
+            type="button"
+          >
             Validate
           </button>
         </Link>
